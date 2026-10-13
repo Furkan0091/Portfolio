@@ -1,0 +1,2004 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muhammad Furqan Ali | Technical Project Manager</title>
+<meta name="description" content="Muhammad Furqan Ali is a Technical Project Manager who manages software delivery from requirements to release — with a backend engineering background that keeps plans realistic and teams aligned.">
+<meta name="theme-color" content="#141416">
+<meta property="og:title" content="Muhammad Furqan Ali | Technical Project Manager">
+<meta property="og:description" content="I manage software delivery from requirements to release — and I understand the engineering underneath the work.">
+<meta property="og:type" content="website">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Muhammad Furqan Ali",
+  "jobTitle": "Technical Project Manager",
+  "description": "Technical Project Manager who manages software delivery from requirements to release, with a backend engineering background.",
+  "url": "https://github.com/Furkan0091",
+  "sameAs": ["https://github.com/Furkan0091", "https://www.linkedin.com/in/furkanaliiii/"]
+}
+</script>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23eab308'/%3E%3Ctext x='32' y='44' font-family='Arial,sans-serif' font-size='34' font-weight='700' fill='%2318181b' text-anchor='middle'%3EM%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  /* ══ COLOR SYSTEM ══════════════════════════════════════════════
+     Two FUNCTIONAL accents + one semantic status colour. Neutrals for
+     everything else. No rule below may invent a colour outside this list.
+       accent-primary    gold — primary CTAs, heading highlight words, eyebrows,
+                         links/icon accents, active states, timeline dots
+       accent-secondary  orange — status badges ("Built"), scenario markers,
+                         code keywords — signal colour only, never CTAs/links
+       *-muted           translucent tints behind badges & pills (accent text
+                         reads on dark surfaces, not on plain white)
+       *-on-dark         pre-blended equivalents for the dark bands
+       success           availability dot + "Live" status variant only
+     ════════════════════════════════════════════════════════════ */
+  --color-accent-primary:#eab308;
+  --color-accent-primary-strong:#facc15;
+  --color-accent-primary-muted:rgba(234,179,8,.13);
+  --color-accent-primary-line:rgba(234,179,8,.30);
+  --color-accent-primary-on-dark:#fde047;
+  --color-accent-secondary:#f97316;
+  --color-accent-secondary-strong:#fb923c;
+  --color-accent-secondary-muted:rgba(249,115,22,.14);
+  --color-accent-secondary-line:rgba(249,115,22,.32);
+  --color-accent-secondary-on-dark:#fdba74;
+  --color-accent-muted:#a1a1aa;
+  --color-success:#22c55e;
+  --color-success-soft:rgba(34,197,94,.13);
+  --color-success-line:rgba(34,197,94,.32);
+  --color-success-halo:rgba(34,197,94,.18);
+  --color-midnight:#1c1c1e;
+  --color-midnight-2:#232326;
+  --color-on-midnight:#d4d4d8;
+
+  /* ══ SURFACES & NEUTRALS ══════════════════════════════════════
+     page sits below band, band sits below raised card — three tones
+     so a card never melts into its background.
+     ════════════════════════════════════════════════════════════ */
+  --bg:#141416;
+  --surface:#1b1b1e;
+  --surface-2:#212124;
+  --surface-sunken:#101012;
+  --border:#2a2a2e;
+  --border-strong:#35353b;
+  --text:#f4f4f5;
+  --text-2:#d4d4d8;
+  --muted:#a1a1aa;
+  --faint:#71717a;
+
+  /* ══ TYPE SCALE ═══════════════════════════════════════════════
+     hero > section heading > group heading > card title > body > meta
+     ════════════════════════════════════════════════════════════ */
+  --fs-hero:clamp(2.4rem,5.2vw,3.75rem);
+  --fs-h2:clamp(1.85rem,3.4vw,2.5rem);
+  --fs-h3:1.35rem;
+  --fs-card:1.1rem;
+  --fs-body:1rem;
+  --fs-meta:.68rem;
+
+  --font:'Inter',system-ui,-apple-system,sans-serif;
+  --disp:'Sora',sans-serif;
+  --mono:'JetBrains Mono',monospace;
+  --radius:16px;
+  --radius-sm:10px;
+  --shadow-sm:0 1px 2px rgba(0,0,0,.4);
+  --shadow-lg:0 16px 40px rgba(0,0,0,.5);
+  /* card lift: defined edge + soft drop so surfaces read as raised */
+  --shadow-card:0 1px 2px rgba(0,0,0,.3),0 8px 24px -12px rgba(0,0,0,.5);
+  --shadow-card-hover:0 2px 6px rgba(0,0,0,.35),0 18px 40px -14px rgba(234,179,8,.16);
+  --shadow-primary:0 1px 2px rgba(0,0,0,.45);
+  --shadow-primary-hover:0 8px 20px rgba(234,179,8,.28);
+
+  /* ══ LAYOUT SYSTEM ════════════════════════════════════════════
+     One spacing vocabulary for the whole page:
+       --card-padding-sm  inline callouts (Key Impact boxes)
+       --card-padding-md  standard cards (projects, skills, value, extra)
+       --card-padding-lg  section-level feature cards (education)
+       --grid-gap         single gutter between items in every card grid
+       --measure          reading measure for paragraph/subtext blocks
+     Header alignment rule: narrative sections left-align their header;
+     card-grid sections use .sec-head.center. See section-base comment.
+     ════════════════════════════════════════════════════════════ */
+  --card-padding-sm:16px 18px;
+  --card-padding-md:28px 26px;
+  --card-padding-lg:48px;
+  --grid-gap:24px;
+  --measure:65ch;
+
+  --ease:cubic-bezier(.2,.7,.3,1);
+}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+/* kill any horizontal scrollbar: clip (not hidden) so the viewport never
+   becomes a scroll container — smooth-scroll anchors & fixed nav unaffected.
+   3D entrance/tilt projections can transiently poke past the edge; this
+   guarantees they can never produce a horizontal bar. */
+html,body{overflow-x:hidden;overflow-x:clip}
+body{
+  font-family:var(--font);
+  background:var(--bg);
+  color:var(--text);
+  line-height:1.6;
+  color-scheme:dark;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+::selection{background:rgba(234,179,8,.28);color:#fde047}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+ul{list-style:none}
+
+.container{max-width:1160px;margin:0 auto;padding:0 32px}
+
+/* ── typography helpers ──
+   type scale: hero > section heading > group heading > card title > body > meta */
+.eyebrow{
+  display:inline-flex;align-items:center;gap:10px;
+  font-family:var(--mono);font-size:var(--fs-meta);font-weight:600;letter-spacing:.2em;text-transform:uppercase;
+  color:var(--color-accent-primary);margin-bottom:18px;
+}
+.eyebrow::before{content:'';width:20px;height:2px;border-radius:2px;background:var(--color-accent-primary-line)}
+h1,h2,h3,h4{font-family:var(--disp);font-weight:700;letter-spacing:-.02em;color:var(--text);line-height:1.18}
+h1{font-size:var(--fs-hero);font-weight:800;letter-spacing:-.03em}
+h2{font-size:var(--fs-h2)}
+h3{font-size:var(--fs-card);font-weight:600}
+h4{font-size:1rem;font-weight:600}
+.lead{color:var(--text-2);font-size:1.05rem;line-height:1.7}
+.sub{color:var(--muted);font-size:.98rem;line-height:1.7}
+.accent{color:var(--color-accent-primary)}
+/* second highlight-word class kept so existing markup needs no text edits —
+   both map to the primary accent (gold) */
+.accent-2{color:var(--color-accent-primary)}
+
+/* mono micro-label for text that labels a block — section eyebrows use .eyebrow */
+.meta-label{
+  font-family:var(--mono);font-size:var(--fs-meta);font-weight:600;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--color-accent-muted);
+}
+
+/* group heading — one level below the section h2, one above card titles */
+.group-head{
+  display:flex;align-items:center;gap:14px;
+  font-family:var(--disp);font-size:var(--fs-h3);font-weight:700;letter-spacing:-.015em;
+  color:var(--text);margin:0 0 24px;
+}
+.group-head::before{content:'';width:3px;height:20px;border-radius:2px;background:var(--color-accent-primary);flex-shrink:0}
+
+/* ── section base ──
+   Header alignment rule (one system, page-wide):
+     narrative sections (About, Experience, Contact)                     → left
+     card-grid sections  (How I Add Value, How I Work, Projects, Skills,
+                          Education)                                     → .center */
+section{position:relative;padding:104px 0}
+.sec-roomy{padding-top:128px;padding-bottom:128px}
+.sec-head{max-width:660px;margin-bottom:48px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.sec-head.center .eyebrow::before{display:none}
+.sec-head.center .group-head{justify-content:center}
+.sec-head.center .group-head::before{display:none}
+/* reading measure — subtext shares one line length in every section */
+.sec-head .sub{max-width:var(--measure)}
+.sec-head.center .sub{margin-left:auto;margin-right:auto}
+
+/* ── buttons ── */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:9px;
+  padding:12px 22px;border-radius:10px;border:1px solid transparent;
+  font-family:var(--font);font-size:.9rem;font-weight:600;line-height:1;
+  cursor:pointer;transition:all .2s var(--ease);white-space:nowrap;
+}
+.btn svg{flex-shrink:0}
+.btn-primary{background:var(--color-accent-primary);color:#18181b;box-shadow:var(--shadow-primary)}
+.btn-primary:hover{background:var(--color-accent-primary-strong);transform:translateY(-1px);box-shadow:var(--shadow-primary-hover)}
+.btn-outline{background:var(--surface);color:var(--text);border-color:var(--border-strong)}
+.btn-outline:hover{border-color:var(--color-accent-primary);color:var(--color-accent-primary);background:var(--color-accent-primary-muted)}
+.btn-ghost{background:transparent;color:var(--text-2)}
+.btn-ghost:hover{color:var(--color-accent-primary);background:var(--color-accent-primary-muted)}
+.btn-lg{padding:15px 28px;font-size:.95rem}
+.btn:focus-visible,a:focus-visible,button:focus-visible{outline:2px solid var(--color-accent-primary);outline-offset:2px}
+
+/* ── chips ──────────────────────────────────────────────────────────
+   three deliberate chip families, no in-between styling:
+     .proj-status / .cs-badge   → status badge: secondary-accent dot + label
+                                  on a secondary-muted tint, bolder weight —
+                                  these signal project status
+     .proj-cat                  → plain uppercase text, no pill background
+     .proj-stack / .tl-tag /
+     .skill-tags                → neutral gray pills, no accent colour —
+                                  many per card, must not compete for attention
+   ──────────────────────────────────────────────────────────────── */
+/* ── how i work — dark-zone overrides (same tokens as the github band) ── */
+#how-i-work .eyebrow{color:#fff}
+#how-i-work .eyebrow::before{background:#fff}
+#how-i-work h2{color:#fff}
+#how-i-work .sub{color:var(--color-on-midnight)}
+#how-i-work .group-head{color:#fff}
+#how-i-work .group-head::before{background:var(--color-accent-primary-line)}
+#how-i-work .flow::before{background:rgba(255,255,255,.22)}
+#how-i-work .flow-num{background:transparent;border-color:var(--color-accent-primary-on-dark);color:var(--color-accent-primary-on-dark);box-shadow:none}
+#how-i-work .flow-step h3{color:#fff}
+#how-i-work .flow-step p{color:var(--color-on-midnight)}
+#how-i-work .flow-step::after{border-left-color:#fff}
+#how-i-work .op-principle{background:rgba(255,255,255,.06);border-color:rgba(255,255,255,.18);box-shadow:none}
+#how-i-work .op-label{color:var(--color-accent-primary-on-dark)}
+#how-i-work .op-principle p{color:#fff}
+#how-i-work .cs-badge{color:var(--color-accent-secondary-on-dark);background:rgba(255,255,255,.08);border-color:rgba(253,186,116,.4)}
+#how-i-work .cs-card{border-left-color:rgba(255,255,255,.25)}
+#how-i-work .cs-card:hover{background:rgba(255,255,255,.06);border-left-color:#fff}
+#how-i-work .cs-open{color:#fff}
+
+/* ── nav ── */
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:500;
+  background:rgba(20,20,22,.86);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--border);
+}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
+.brand{font-family:var(--disp);font-weight:800;font-size:1.15rem;letter-spacing:-.02em;color:var(--text)}
+.brand span{color:var(--color-accent-primary)}
+.nav-links{display:flex;align-items:center;gap:2px}
+.nav-links a{
+  font-size:.85rem;font-weight:500;color:var(--text-2);
+  padding:8px 13px;border-radius:8px;transition:color .15s,background .15s;
+}
+.nav-links a:hover{color:var(--color-accent-primary);background:var(--color-accent-primary-muted)}
+.nav-links a.on{color:var(--color-accent-primary);font-weight:600}
+.ham{display:none;flex-direction:column;gap:5px;background:none;border:none;padding:8px;cursor:pointer}
+.ham span{width:22px;height:2px;background:var(--text);border-radius:2px;transition:all .25s}
+.ham.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.ham.open span:nth-child(2){opacity:0}
+.ham.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+/* skip link — keyboard users jump straight to content; invisible until focused */
+.skip-link{
+  position:fixed;top:-60px;left:16px;z-index:1000;
+  background:var(--color-accent-primary);color:#18181b;font-weight:600;font-size:.85rem;
+  padding:10px 16px;border-radius:0 0 10px 10px;transition:top .2s;
+}
+.skip-link:focus{top:0}
+
+/* ── hero ── */
+.hero{padding:156px 0 88px}
+.hero-grid{display:grid;grid-template-columns:1.25fr .85fr;gap:64px;align-items:center}
+/* the copy column is a single flex stack, so pill → h1 → sub → sub → pipeline → CTA
+   all sit on one spacing rhythm instead of six competing margins */
+.hero-copy{display:flex;flex-direction:column;align-items:flex-start;gap:20px}
+.hero-pill{
+  display:inline-flex;align-items:center;gap:9px;
+  padding:7px 15px;border-radius:100px;font-size:.79rem;font-weight:700;line-height:1.2;letter-spacing:.01em;
+  color:var(--color-accent-primary-strong);background:var(--color-accent-primary-muted);border:1px solid var(--color-accent-primary-line);
+}
+.hero-pill .dot{width:7px;height:7px;border-radius:50%;background:var(--color-success);box-shadow:0 0 0 3px var(--color-success-halo)}
+.hero h1{font-size:var(--fs-hero);margin:0;letter-spacing:-.03em}
+.hero h1 .accent{color:var(--color-accent-primary)}
+.hero-sub{color:var(--text-2);font-size:1.1rem;line-height:1.7;max-width:var(--measure);margin:0}
+.hero-bridge{color:var(--muted);font-size:.95rem;line-height:1.6;margin:0;max-width:var(--measure)}
+.hero-cta{display:flex;gap:12px;flex-wrap:wrap}
+
+/* ── hero pipeline ── */
+.pipeline{margin:0;width:100%}
+.pipeline-label{font-family:var(--mono);font-size:var(--fs-meta);font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--color-accent-muted);margin-bottom:12px}
+.pipeline-track{display:flex;align-items:center;flex-wrap:wrap;gap:8px}
+.pipe-stage{display:inline-flex;align-items:center;gap:8px;padding:7px 13px;border:1px solid var(--border-strong);border-radius:100px;background:var(--surface);font-size:.8rem;font-weight:600;color:var(--text-2);transition:color .25s,background .25s,border-color .25s}
+.pipe-num{font-family:var(--mono);font-size:.66rem;font-weight:700;color:var(--color-accent-primary);background:var(--color-accent-primary-muted);border-radius:100px;width:20px;height:20px;display:inline-flex;align-items:center;justify-content:center;transition:background .25s,color .25s}
+.pipe-stage.done{border-color:var(--color-accent-primary-line);color:var(--color-accent-primary-strong);background:var(--color-accent-primary-muted)}
+.pipe-stage.active{border-color:var(--color-accent-primary);background:var(--color-accent-primary);color:#18181b;box-shadow:0 0 0 4px var(--color-accent-primary-muted)}
+.pipe-stage.active .pipe-num{background:rgba(24,24,27,.16);color:#18181b}
+.pipe-arrow{color:var(--faint);font-weight:700;font-size:.8rem}
+
+.hero-card{
+  background:var(--surface);border:1px solid var(--border-strong);border-radius:20px;
+  box-shadow:var(--shadow-lg);transform-style:preserve-3d;
+}
+.hero-photo{position:relative;height:260px;background:linear-gradient(135deg,var(--color-accent-primary-muted),var(--surface));border-radius:20px 20px 0 0;transform-style:preserve-3d}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center top;border-radius:inherit;animation:floaty 7s ease-in-out infinite}
+.hero-card-body{padding:24px 26px 26px;transform-style:preserve-3d}
+.hero-name{font-family:var(--disp);font-size:1.35rem;font-weight:700}
+.hero-role{color:var(--color-accent-primary);font-weight:600;font-size:.88rem;margin:4px 0 16px}
+.hero-fact{display:flex;align-items:center;gap:10px;font-size:.86rem;color:var(--text-2);padding:9px 0;border-top:1px solid var(--border)}
+.hero-fact svg{color:var(--color-accent-primary)}
+.hero-links{display:flex;gap:10px;margin-top:18px}
+.hero-links a{
+  flex:1;display:inline-flex;align-items:center;justify-content:center;gap:8px;
+  padding:10px;border-radius:9px;border:1px solid var(--border-strong);
+  font-size:.82rem;font-weight:600;color:var(--text-2);transition:all .18s;
+}
+.hero-links a:hover{border-color:var(--color-accent-primary);color:var(--color-accent-primary);background:var(--color-accent-primary-muted)}
+
+/* ── about ── */
+#about{background:var(--surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
+.about-text p{color:var(--text-2);line-height:1.85;margin-bottom:18px;font-size:var(--fs-body);max-width:var(--measure)}
+.about-text p strong{color:var(--text);font-weight:600}
+.about-facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:28px}
+.fact{
+  display:flex;align-items:center;gap:12px;padding:14px 16px;
+  background:var(--surface);border:1px solid var(--border);border-radius:12px;
+  box-shadow:var(--shadow-card);
+  font-size:.88rem;color:var(--text-2);font-weight:500;
+}
+.fact svg{color:var(--color-accent-primary);flex-shrink:0}
+.fact b{display:block;color:var(--text);font-weight:600}
+
+/* ── experience timeline ── */
+/* ── experience timeline ──
+   Markers belong to the PRIMARY accent (progress/navigation role); status
+   colour is reserved for badges. Dots use primary-strong rings + primary-muted
+   halo; li markers and period chips match. */
+.tl{position:relative;max-width:820px;margin:0}
+.tl::before{content:'';position:absolute;left:8px;top:6px;bottom:6px;width:2px;background:var(--border-strong)}
+.tl-item{position:relative;padding:0 0 56px 44px}
+.tl-item:last-child{padding-bottom:0}
+.tl-dot{
+  position:absolute;left:0;top:5px;width:18px;height:18px;border-radius:50%;
+  background:var(--surface);border:2px solid var(--color-accent-primary-strong);
+  box-shadow:0 0 0 4px var(--color-accent-primary-muted);
+}
+.tl-period{
+  display:inline-block;font-family:var(--mono);font-size:.72rem;font-weight:600;letter-spacing:.04em;
+  color:var(--color-accent-primary-strong);background:var(--color-accent-primary-muted);border:1px solid var(--color-accent-primary-line);
+  padding:4px 12px;border-radius:999px;margin-bottom:12px;
+}
+.tl-role{font-family:var(--disp);font-size:var(--fs-card);font-weight:600}
+.tl-co{color:var(--muted);font-weight:500;font-size:.9rem;margin:3px 0 14px}
+.tl-points li{position:relative;padding-left:20px;color:var(--text-2);font-size:.93rem;line-height:1.7;margin-bottom:7px}
+.tl-points li::before{content:'';position:absolute;left:2px;top:.62em;width:7px;height:7px;border-radius:2px;background:var(--color-accent-primary-muted);border:1px solid var(--color-accent-primary)}
+.tl-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}
+/* neutral muted pill (contrast with the status chips in projects/case studies) */
+.tl-tag{
+  font-family:var(--mono);font-size:var(--fs-meta);font-weight:500;color:var(--muted);
+  background:var(--surface);border:1px solid var(--border);padding:4px 11px;border-radius:999px;
+}
+
+/* ── how I work ── DARK ZONE (connected 6-step flow, not six separate cards)
+   Same midnight tokens as the github band: gradient midnight→midnight-2,
+   #fff headings, on-midnight body — one consistent dark language. */
+#how-i-work{background:linear-gradient(135deg,var(--color-midnight),var(--color-midnight-2))}
+.flow{position:relative;display:grid;grid-template-columns:repeat(6,1fr);gap:34px}
+/* the rail runs through the centre of every node, connecting all six steps */
+.flow::before{content:'';position:absolute;left:18px;right:18px;top:17px;height:2px;background:var(--color-accent-primary-line)}
+.flow-step{position:relative;display:flex;flex-direction:column}
+.flow-num{
+  display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:50%;
+  background:var(--surface);border:1.5px solid var(--color-accent-primary);color:var(--color-accent-primary);
+  font-family:var(--mono);font-size:.7rem;font-weight:700;
+  box-shadow:0 0 0 4px var(--color-accent-primary-muted);
+}
+/* gutter arrowhead between consecutive steps */
+.flow-step::after{
+  content:'';position:absolute;top:13px;left:calc(100% + 14px);
+  border-left:7px solid var(--color-accent-primary);border-top:5px solid transparent;border-bottom:5px solid transparent;
+}
+.flow-step:last-child::after{display:none}
+.flow-step h3{margin:18px 0 8px;font-size:1.02rem}
+.flow-step p{color:var(--muted);font-size:.86rem;line-height:1.6}
+
+/* ── why work with me ── (section merged: its overlapping cards moved into
+   the About principles, the 6-step process and the technical foundation) */
+
+/* ── projects ── */
+.proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--grid-gap)}
+.proj-card{
+  display:flex;flex-direction:column;
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:var(--card-padding-md);box-shadow:var(--shadow-card);
+  transition:transform .25s var(--ease),box-shadow .25s,border-color .25s;
+}
+.proj-card:hover{transform:translateY(-4px);border-color:var(--color-accent-primary-line);box-shadow:var(--shadow-card-hover)}
+.proj-card.featured{
+  grid-column:span 3;border-color:var(--color-accent-primary-line);
+  background:linear-gradient(180deg,var(--color-accent-primary-muted),var(--surface) 55%);
+}
+.proj-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:14px}
+/* category label — plain uppercase mono text, muted gray, NO pill background */
+.proj-cat{font-family:var(--mono);font-size:var(--fs-meta);font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--color-accent-muted)}
+/* status badge — secondary accent, slightly bolder & higher contrast than
+   the neutral pills: this signals project status at a glance */
+.proj-status{
+  display:inline-flex;align-items:center;gap:7px;
+  font-family:var(--font);font-size:.74rem;font-weight:700;line-height:1.5;
+  letter-spacing:.01em;
+  padding:4px 11px 4px 9px;border-radius:999px;white-space:nowrap;
+  color:var(--color-accent-secondary-strong);background:var(--color-accent-secondary-muted);border:1px solid var(--color-accent-secondary-line);
+}
+.proj-status::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--color-accent-secondary);flex-shrink:0}
+.proj-status.live{color:var(--color-success);background:var(--color-success-soft);border:1px solid var(--color-success-line)}
+.proj-status.live::before{background:var(--color-success);box-shadow:0 0 0 3px var(--color-success-halo)}
+.proj-name{font-family:var(--disp);font-size:1.25rem;font-weight:700;margin-bottom:4px}
+.proj-tagline{color:var(--muted);font-size:.88rem;font-weight:500;margin-bottom:14px}
+.proj-desc{color:var(--text-2);font-size:.92rem;line-height:1.7;margin-bottom:18px}
+/* tech tags = neutral muted pills — no accent colour, even on hover */
+.proj-stack{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.proj-stack span{
+  font-family:var(--mono);font-size:var(--fs-meta);font-weight:500;color:var(--muted);
+  background:var(--surface-2);border:1px solid var(--border);padding:4px 10px;border-radius:999px;
+}
+/* role line — what the user owned on this project (PM-first framing) */
+.proj-role{
+  display:flex;align-items:baseline;gap:9px;
+  font-size:.86rem;line-height:1.6;color:var(--text-2);margin:-6px 0 16px;
+}
+.proj-role span{
+  font-family:var(--mono);font-size:.62rem;font-weight:700;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--color-accent-primary);flex-shrink:0;
+}
+/* priority cards — the 2–3 strongest projects get a quiet gold edge */
+.proj-card.priority{border-color:var(--color-accent-primary-line)}
+/* outcome line — every project card answers "so what?" */
+.proj-metric{
+  display:flex;align-items:flex-start;gap:9px;
+  font-size:.84rem;font-weight:500;line-height:1.6;color:var(--color-accent-primary-strong);
+  background:var(--color-accent-primary-muted);border:1px solid var(--color-accent-primary-line);
+  border-radius:10px;padding:10px 13px;margin-bottom:18px;
+}
+.proj-metric svg{flex-shrink:0;margin-top:3px}
+.proj-hl{margin-bottom:14px}
+.proj-hl li{position:relative;padding-left:20px;color:var(--text-2);font-size:.85rem;line-height:1.65;margin-bottom:6px}
+.proj-hl li::before{content:'✓';position:absolute;left:0;color:var(--color-accent-primary);font-weight:700}
+.proj-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:auto}
+/* confidentiality note — subtle, factual, not an excuse */
+.conf-note{
+  font-family:var(--mono);font-size:.72rem;letter-spacing:.04em;color:var(--faint);
+  text-align:center;margin:-24px 0 44px;
+}
+.proj-note{font-family:var(--mono);font-size:.72rem;color:var(--faint);margin-top:auto;padding-top:10px}
+
+/* featured layout */
+.proj-card.featured .proj-name{font-size:1.55rem;font-weight:800}
+.proj-card.featured .proj-desc{max-width:640px}
+.proj-feature-row{display:grid;grid-template-columns:1.1fr .9fr;gap:32px}
+.proj-feature-side{
+  background:var(--surface);border:1px solid var(--border);border-radius:12px;
+  padding:var(--card-padding-sm);box-shadow:var(--shadow-card);
+}
+.proj-feature-side h4{
+  font-family:var(--mono);font-size:var(--fs-meta);font-weight:600;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--color-accent-muted);margin-bottom:12px;
+}
+
+/* mid-page dark breather between project rows — reuses the github-band
+   tokens (midnight gradient, #fff display text, primary-line mono label) */
+.proj-quote{
+  display:flex;align-items:center;gap:32px;
+  background:linear-gradient(135deg,var(--color-midnight),var(--color-midnight-2));
+  border-radius:24px;padding:40px 48px;margin:80px 0;
+  box-shadow:var(--shadow-lg);
+}
+.proj-quote .op-label{color:var(--color-accent-primary-on-dark);flex-shrink:0}
+.proj-quote p{font-family:var(--disp);font-weight:700;font-size:1.2rem;letter-spacing:-.01em;color:#fff;line-height:1.45;margin:0}
+
+/* additional work */
+.extra-grid{display:grid;grid-template-columns:1fr 1fr;gap:var(--grid-gap);margin-top:0}
+.extra-card{
+  display:flex;flex-direction:column;gap:14px;
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:var(--card-padding-md);box-shadow:var(--shadow-card);transition:border-color .2s,box-shadow .2s,transform .2s var(--ease);
+}
+.extra-card:hover{border-color:var(--color-accent-primary-line);box-shadow:var(--shadow-card-hover);transform:translateY(-3px)}
+.extra-card h3{font-size:1.2rem}
+.extra-card p{color:var(--text-2);font-size:.9rem;line-height:1.7}
+.extra-card .btn{margin-top:4px;align-self:flex-start}
+
+/* ── situations list ── compact PM-scenario rows inside #how-i-work */
+.scenario-list{display:grid;grid-template-columns:1fr;gap:var(--grid-gap)}
+.cs-card{
+  display:flex;flex-direction:column;text-align:left;
+  background:var(--surface-2);border:1px solid var(--border);border-radius:var(--radius);
+  padding:var(--card-padding-md);box-shadow:var(--shadow-sm);cursor:pointer;
+  transition:transform .22s var(--ease),box-shadow .22s,border-color .22s;
+}
+.cs-card:hover{transform:translateY(-4px);border-color:var(--color-accent-primary-line);box-shadow:var(--shadow-card-hover)}
+/* scenario badge — same secondary-accent status language as .proj-status */
+.cs-badge{
+  align-self:flex-start;display:inline-flex;align-items:center;gap:7px;
+  font-family:var(--font);font-size:.72rem;font-weight:700;line-height:1.5;
+  letter-spacing:.01em;
+  padding:4px 11px 4px 9px;border-radius:999px;margin-bottom:16px;
+  color:var(--color-accent-secondary-strong);background:var(--color-accent-secondary-muted);border:1px solid var(--color-accent-secondary-line);
+}
+.cs-badge::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--color-accent-secondary);flex-shrink:0}
+.cs-badge.scenario{border-color:var(--color-accent-secondary-line);color:var(--color-accent-secondary-strong)}
+.cs-card h3{font-size:var(--fs-card);line-height:1.35;margin-bottom:8px}
+.cs-open{display:inline-flex;align-items:center;gap:7px;color:var(--color-accent-primary);font-weight:600;font-size:.86rem;margin-top:18px}
+.cs-open svg{transition:transform .2s}
+.cs-card:hover .cs-open svg{transform:translateX(3px)}
+.scenario-list .cs-card{
+  background:transparent;border-color:transparent;border-left:3px solid var(--color-accent-secondary-line);
+  border-radius:0 var(--radius-sm) var(--radius-sm) 0;box-shadow:none;padding:var(--card-padding-sm);
+}
+.scenario-list .cs-card:hover{transform:none;background:var(--surface-2);border-left-color:var(--color-accent-secondary);box-shadow:none}
+.scenario-list .cs-badge{margin-bottom:14px}
+.scenario-list .cs-open{margin-top:0}
+
+/* modal */
+.modal{position:fixed;inset:0;z-index:1000;display:flex;align-items:flex-start;justify-content:center;padding:32px 16px;visibility:hidden;opacity:0;transition:opacity .25s,visibility .25s}
+.modal.open{visibility:visible;opacity:1}
+.modal-backdrop{position:absolute;inset:0;background:rgba(0,0,0,.6);backdrop-filter:blur(3px)}
+.modal-panel{
+  position:relative;width:100%;max-width:840px;max-height:calc(100vh - 64px);overflow-y:auto;
+  background:var(--surface);border-radius:20px;box-shadow:var(--shadow-lg);
+  transform:translateY(16px);transition:transform .25s var(--ease);
+}
+.modal.open .modal-panel{transform:none}
+.modal-close{
+  position:absolute;top:16px;right:16px;z-index:2;
+  width:36px;height:36px;border-radius:9px;border:1px solid var(--border);
+  background:var(--surface);color:var(--text-2);display:flex;align-items:center;justify-content:center;
+  cursor:pointer;transition:all .15s;
+}
+.modal-close:hover{background:var(--color-accent-primary-muted);color:var(--color-accent-primary);border-color:var(--color-accent-primary-line)}
+.modal-body{padding:44px 48px 48px}
+.modal-badge{font-family:var(--mono);font-size:var(--fs-meta);font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--color-accent-primary);margin-bottom:12px}
+.modal-body h2{font-size:1.6rem;margin-bottom:6px}
+.modal-sub{color:var(--muted);font-size:.95rem;margin-bottom:32px}
+.cs-sec{margin-bottom:28px}
+.cs-sec h4{font-family:var(--mono);font-size:var(--fs-meta);font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--color-accent-primary);margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid var(--border)}
+.cs-sec p{color:var(--text-2);font-size:.94rem;line-height:1.8}
+.cs-sec ul li,.cs-sec ol.steps li{position:relative;padding-left:22px;color:var(--text-2);font-size:.94rem;line-height:1.75;margin-bottom:8px}
+.cs-sec ul li::before{content:'';position:absolute;left:4px;top:.62em;width:7px;height:7px;border-radius:2px;background:var(--color-accent-primary-line);border:1px solid var(--color-accent-primary)}
+.cs-sec ol.steps{counter-reset:cs}
+.cs-sec ol.steps li{padding-left:46px;counter-increment:cs;margin-bottom:12px}
+.cs-sec ol.steps li::before{content:counter(cs,decimal-leading-zero);position:absolute;left:0;top:0;font-family:var(--mono);font-size:.72rem;font-weight:600;color:var(--color-accent-primary);width:32px;height:32px;border-radius:8px;background:var(--color-accent-primary-muted);display:flex;align-items:center;justify-content:center}
+.cs-sec ol.steps li span{display:block;font-size:.78rem;color:var(--faint);font-family:var(--mono);margin-bottom:2px}
+.cs-flow{display:flex;flex-wrap:wrap;align-items:stretch;gap:8px;margin-top:6px}
+.cs-flow-node{flex:1;min-width:130px;background:var(--surface-2);border:1px solid var(--border);border-radius:10px;padding:14px 14px 16px}
+.cs-flow-num{display:block;font-family:var(--mono);font-size:.66rem;font-weight:600;letter-spacing:.08em;color:var(--color-accent-primary);margin-bottom:8px}
+.cs-flow-node>span:last-child{font-size:.85rem;font-weight:500;color:var(--text-2);line-height:1.5}
+.cs-flow-arrow{display:flex;align-items:center;color:var(--color-accent-primary);font-weight:700;font-size:1.05rem}
+
+/* ── skills ── (layout rhythm break: 3 cards + one full-width technical band) */
+.skill-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--grid-gap)}
+.skill-cat{
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:var(--card-padding-md);box-shadow:var(--shadow-card);
+}
+.skill-cat:last-child{
+  grid-column:span 3;border-color:var(--color-accent-primary-line);
+  background:linear-gradient(135deg,var(--color-accent-primary-muted),var(--surface) 58%);
+}
+.skill-cat h3{font-size:var(--fs-card);margin-bottom:6px}
+.skill-cat .cat-note{
+  font-family:var(--mono);font-size:var(--fs-meta);font-weight:600;letter-spacing:.16em;
+  text-transform:uppercase;color:var(--color-accent-muted);margin-bottom:20px;
+}
+/* skill tags = neutral muted pills, one step up in size from stack tags */
+.skill-tags{display:flex;flex-wrap:wrap;gap:8px}
+.skill-tags span{
+  font-size:.8rem;font-weight:500;color:var(--text-2);
+  background:var(--surface-2);border:1px solid var(--border);padding:6px 14px;border-radius:999px;
+  transition:border-color .15s,color .15s,background .15s;
+}
+.skill-tags span:hover{color:var(--color-accent-primary-strong)}
+.skill-cat:last-child .skill-tags span{background:var(--surface);border-color:var(--color-accent-primary-line)}
+
+/* ── code artifact ── */
+.code-artifact{
+  margin-top:32px;display:grid;grid-template-columns:.9fr 1.1fr;gap:36px;align-items:center;
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);
+  padding:32px;box-shadow:var(--shadow-card);
+}
+.code-artifact h3{margin-bottom:12px}
+.code-artifact p{color:var(--muted);font-size:.9rem;line-height:1.7}
+.code-artifact .meta-label{display:block;margin-top:14px}
+.code-card{background:var(--surface-2);border:1px solid var(--border);border-radius:12px;overflow:hidden}
+.code-head{
+  display:flex;align-items:center;gap:6px;padding:11px 16px;
+  background:var(--surface);border-bottom:1px solid var(--border);
+}
+.code-head i{width:9px;height:9px;border-radius:50%;background:var(--border-strong)}
+.code-head span{margin-left:8px;font-family:var(--mono);font-size:.72rem;color:var(--muted)}
+.code-body{
+  margin:0;padding:20px 18px;overflow-x:auto;
+  font-family:var(--mono);font-size:.78rem;line-height:1.75;color:var(--text-2);white-space:pre;
+}
+.code-body .c{color:var(--faint)}
+.code-body .k{color:var(--color-accent-secondary-on-dark)}
+.code-body .s{color:var(--color-success)}
+.code-body .f{color:var(--color-accent-primary-strong)}
+.code-body .p{color:var(--color-accent-muted)}
+/* engineering → delivery chain — why technical depth matters to a PM */
+.ua-chain{margin-top:16px}
+.ua-chain-label{
+  display:block;font-family:var(--mono);font-size:var(--fs-meta);font-weight:600;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--color-accent-muted);margin-bottom:10px;
+}
+.ua-chain-row{display:flex;flex-wrap:wrap;align-items:center;gap:8px}
+.ua-chain-row span{
+  font-size:.78rem;font-weight:600;color:var(--text-2);
+  background:var(--surface-2);border:1px solid var(--border);border-radius:8px;padding:5px 11px;
+}
+.ua-chain-row i{color:var(--color-accent-primary);font-style:normal;font-weight:700}
+
+/* ── github ── */
+.github-band{
+  background:linear-gradient(135deg,var(--color-midnight),var(--color-midnight-2));border-radius:24px;
+  padding:64px 56px;text-align:center;color:#fff;
+}
+.github-band h2{color:#fff}
+.github-band p{color:var(--color-on-midnight);max-width:var(--measure);margin:14px auto 28px;font-size:1rem;line-height:1.7}
+.github-band .btn{background:var(--color-accent-primary);color:#18181b}
+.github-band .btn:hover{background:var(--color-accent-primary-strong)}
+
+/* ── contact ── */
+#contact{background:var(--surface);border-top:1px solid var(--border)}
+/* narrative section → everything shares the container's left edge;
+   line length is held by --measure, not by a narrower centered column */
+.contact-inner p{max-width:var(--measure);margin:0 0 36px}
+.contact-actions{display:flex;gap:14px;flex-wrap:wrap}
+
+/* ── footer ── */
+footer{border-top:1px solid var(--border);padding:36px 0;background:var(--surface)}
+.footer-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:.84rem;color:var(--muted)}
+.footer-inner .brand{font-size:1rem}
+.footer-links{display:flex;gap:20px}
+.footer-links a:hover{color:var(--color-accent-primary)}
+
+/* ── how I add value ── asymmetric layout: one featured panel + two stacked */
+.value-block{margin-top:80px}
+.value-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:var(--grid-gap)}
+.value-item:first-child{grid-row:span 2;display:flex;flex-direction:column;justify-content:center;padding:var(--card-padding-lg)}
+.value-item:first-child h4{font-size:1.15rem}
+.value-item{background:var(--surface-2);border:1px solid var(--border-strong);border-radius:var(--radius);padding:var(--card-padding-md);box-shadow:var(--shadow-card)}
+.value-item:first-child{background:var(--surface)}
+.value-num{font-family:var(--mono);font-size:var(--fs-meta);font-weight:600;letter-spacing:.16em;color:var(--color-accent-primary);display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.value-num::after{content:'';flex:1;height:1px;background:var(--color-accent-primary-line)}
+.value-item h4{font-size:1.02rem;margin-bottom:10px}
+.value-item p{color:var(--muted);font-size:.9rem;line-height:1.7}
+
+/* ── key impact ── */
+.tl-impact{background:var(--color-accent-primary-muted);border:1px solid var(--color-accent-primary-line);border-radius:12px;padding:var(--card-padding-sm);margin:0 0 14px}
+.tl-impact-label{font-family:var(--mono);font-size:var(--fs-meta);font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--color-accent-primary-strong);margin-bottom:8px}
+.tl-impact-points li{position:relative;padding-left:20px;color:var(--text-2);font-size:.88rem;line-height:1.65;margin-bottom:6px}
+.tl-impact-points li::before{content:'→';position:absolute;left:0;color:var(--color-accent-primary);font-weight:700}
+
+/* ── operating principle ── */
+.op-principle{margin-top:44px;display:flex;align-items:center;justify-content:center;gap:18px;flex-wrap:wrap;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:24px 28px;box-shadow:var(--shadow-card);text-align:center}
+.op-label{font-family:var(--mono);font-size:var(--fs-meta);font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--color-accent-primary)}
+.op-principle p{font-family:var(--disp);font-weight:700;font-size:1.15rem;color:var(--text);letter-spacing:-.01em}
+
+/* ── education ── */
+.edu-card{max-width:760px;margin:0 auto;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:var(--card-padding-lg);box-shadow:var(--shadow-card);text-align:center}
+.edu-degree{font-family:var(--disp);font-size:1.55rem;font-weight:700;letter-spacing:-.02em}
+.edu-note{color:var(--muted);font-size:.95rem;margin:8px 0 30px}
+.edu-areas h4{font-family:var(--mono);font-size:var(--fs-meta);font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--color-accent-muted);margin-bottom:14px}
+.edu-areas .skill-tags{justify-content:center}
+
+/* ── reveal ── */
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s var(--ease),transform .6s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.08s}
+.rv.d2{transition-delay:.16s}
+/* ═══ 3D LAYER ════════════════════════════════════════════════
+   Three kinds of depth, one system:
+   · hero canvas   → 3D node network (the "bridge" between clients & teams)
+   · .tilt cards   → pointer-tracked rotateX/Y + glare, content pops in Z
+   · .rv-x / cubes → 3D entrances + CSS cubes in the dark bands
+   All motion is skipped under prefers-reduced-motion (JS checks, too). */
+#hero3d{position:absolute;inset:0;z-index:0;pointer-events:none;opacity:.8}
+.hero .container{position:relative;z-index:1}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+
+/* skills word-ring — 3D orbit of the technical stack ("What I work with") */
+.ring-wrap{position:relative;margin-top:24px;height:200px;border-radius:12px;background:radial-gradient(ellipse at center,rgba(234,179,8,.10),rgba(234,179,8,0) 68%)}
+#skillRing{display:block;width:100%;height:100%}
+
+/* 3D entrance variant — same .rv contract, flips up from a slight tilt.
+   Perspective + rotation widen the projected box; 1200px/12deg keeps the
+   worst-case flare (~+20px) inside the 32px container margin so un-revealed
+   cards below the fold can never push the page wider than the viewport. */
+.rv-x{transform:perspective(1200px) rotateX(-12deg) translateY(22px)}
+.rv.d3{transition-delay:.24s}
+.rv.d4{transition-delay:.32s}
+.rv.d5{transition-delay:.4s}
+
+/* pointer-tracked 3D tilt — JS feeds --rx/--ry/--gx/--gy */
+.tilt{position:relative;transform-style:preserve-3d;transition:opacity .6s var(--ease),transform .45s var(--ease)}
+.tilt.engaged{z-index:3;will-change:transform;transition:opacity .6s var(--ease),transform .1s ease-out}
+.tilt.engaged,
+.scenario-list .cs-card.engaged{transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(var(--ty,-5px))}
+.tilt::after{content:'';position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .35s var(--ease);background:radial-gradient(480px circle at var(--gx,50%) var(--gy,50%),rgba(255,255,255,.16),rgba(255,255,255,0) 46%)}
+.tilt.engaged::after{opacity:1}
+
+/* hero card — keep the 3D context so card content pops toward the viewer */
+.hero-card.engaged .hero-name{transform:translateZ(24px)}
+.hero-card.engaged .hero-role{transform:translateZ(16px)}
+.hero-card.engaged .hero-fact{transform:translateZ(10px)}
+.hero-name,.hero-role,.hero-fact{transition:transform .35s var(--ease)}
+
+/* decorative CSS cubes in the dark bands */
+.cube3d{position:absolute;width:72px;height:72px;pointer-events:none;opacity:.9;animation:cube-spin 18s linear infinite}
+.cube3d i{position:absolute;inset:0;border:1px solid rgba(253,224,71,.42);background:linear-gradient(135deg,rgba(234,179,8,.10),rgba(249,115,22,.04))}
+.cube3d i:nth-child(1){transform:translateZ(36px)}
+.cube3d i:nth-child(2){transform:rotateY(180deg) translateZ(36px)}
+.cube3d i:nth-child(3){transform:rotateY(90deg) translateZ(36px)}
+.cube3d i:nth-child(4){transform:rotateY(-90deg) translateZ(36px)}
+.cube3d i:nth-child(5){transform:rotateX(90deg) translateZ(36px)}
+.cube3d i:nth-child(6){transform:rotateX(-90deg) translateZ(36px)}
+@keyframes cube-spin{from{transform:perspective(520px) rotateX(-24deg) rotateY(0deg)}to{transform:perspective(520px) rotateX(-24deg) rotateY(360deg)}}
+.proj-quote{position:relative}
+.proj-quote .cube3d{right:44px;top:50%;margin-top:-36px}
+.github-band{position:relative}
+.github-band .cube3d{right:56px;top:50%;margin-top:-36px}
+
+@media(max-width:900px){.cube3d{display:none}}
+@media(max-width:640px){.ring-wrap{height:150px}}
+
+/* ── responsive ── */
+@media(max-width:1080px){
+  .nav-links{display:none;position:fixed;top:68px;left:0;right:0;flex-direction:column;align-items:stretch;gap:2px;background:var(--surface);border-bottom:1px solid var(--border);padding:14px 20px 22px}
+  .nav-links.open{display:flex}
+  .nav-links a{padding:12px 14px;font-size:.95rem}
+  .ham{display:flex}
+  .skill-grid{grid-template-columns:repeat(2,1fr)}
+  .skill-cat:last-child{grid-column:span 2}
+  .flow{grid-template-columns:repeat(3,1fr);gap:28px 34px}
+  .flow::before{display:none}
+  .flow-step:nth-child(3n)::after{display:none}
+}
+@media(max-width:900px){
+  /* full-width cards on small screens: plain rise, no 3D projection —
+     a perspective flare here would push past the viewport edge */
+  .rv-x{transform:translateY(22px)}
+  .hero-grid{grid-template-columns:1fr;gap:44px}
+  .hero-card{max-width:420px}
+  .about-grid{grid-template-columns:1fr;gap:48px}
+  .value-grid{grid-template-columns:1fr}
+  .value-item:first-child{grid-row:span 1;padding:var(--card-padding-md)}
+  .value-item:first-child h4{font-size:1.02rem}
+  .proj-grid{grid-template-columns:repeat(2,1fr)}
+  .proj-card.featured{grid-column:span 2}
+  .proj-feature-row{grid-template-columns:1fr}
+  .code-artifact{grid-template-columns:1fr;gap:28px}
+}
+@media(max-width:640px){
+  :root{--fs-hero:clamp(1.95rem,8.6vw,2.4rem);--fs-h2:clamp(1.6rem,7vw,2rem);--fs-h3:1.22rem}
+  .container{padding:0 20px}
+  section{padding:72px 0}
+  .sec-roomy{padding-top:88px;padding-bottom:88px}
+  .sec-head{margin-bottom:36px}
+  .hero{padding:124px 0 88px}
+  .hero-copy{gap:16px}
+  .hero-card{max-width:340px}
+  .hero-photo{height:210px}
+  .value-grid{grid-template-columns:1fr}
+  .proj-quote{flex-direction:column;align-items:flex-start;gap:12px;padding:32px 24px;margin:56px 0}
+  .proj-grid{grid-template-columns:1fr}
+  .proj-card.featured{grid-column:span 1}
+  /* the step flow becomes a vertical stepper — geometry mirrors the
+     Experience timeline (.tl): rail at left:8px + 2px width, 18px nodes on
+     the same 9px centreline, text inset 44px. Desktop keeps the horizontal
+     6-column grid, so none of this applies above 640px. */
+  .flow{grid-template-columns:1fr;gap:26px}
+  .flow::before{display:block;left:8px;right:auto;top:6px;bottom:6px;width:2px;height:auto}
+  .flow-step{padding-left:44px}
+  .flow-step::after{top:calc(100% + 8px);left:5.5px;transform:rotate(90deg)}
+  /* nodes mirror .tl-dot exactly: absolutely positioned on the rail
+     centreline (left:0 + 18px dot → centre x=9 = rail centre), with the
+     step's 44px padding providing the same line→text gap as .tl-item */
+  .flow-num{position:absolute;left:0;top:5px;width:18px;height:18px;font-size:.6rem}
+  .flow-step h3{margin-top:0}
+  .skill-grid{grid-template-columns:1fr}
+  .skill-cat:last-child{grid-column:span 1}
+  .extra-grid{grid-template-columns:1fr}
+  .about-facts{grid-template-columns:1fr}
+  .modal-body{padding:36px 24px 40px}
+  .github-band{padding:48px 24px;border-radius:18px}
+}
+@media(prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  html{scroll-behavior:auto}
+  .rv{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#home" class="brand">MFA<span>.</span></a>
+    <nav aria-label="Primary">
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#how-i-work">How I Work</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="ham" id="ham" aria-label="Toggle navigation" aria-expanded="false" aria-controls="navLinks"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+<!-- ══════ HERO ══════ -->
+<section class="hero" id="home">
+  <canvas id="hero3d" aria-hidden="true"></canvas>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <div class="hero-pill rv"><span class="dot"></span> Open to new opportunities</div>
+      <h1 class="rv d1">I <span class="accent">deliver</span> projects. I <span class="accent">understand</span> the code. I <span class="accent">own</span> the outcome.</h1>
+      <p class="hero-sub rv d2">I manage software delivery from requirements to release — and I understand the engineering underneath the work.</p>
+      <p class="hero-bridge rv d2">As comfortable with clients and business goals as with developers and code — I turn requirements into plans engineering teams can build and stakeholders can trust.</p>
+      <div class="pipeline rv d2">
+        <div class="pipeline-label">My delivery pipeline — from request to release</div>
+        <div class="pipeline-track" id="pipelineTrack"></div>
+      </div>
+      <div class="hero-cta rv d2">
+        <a href="#projects" class="btn btn-primary btn-lg">View My Work
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#contact" class="btn btn-outline btn-lg">Let's Connect</a>
+      </div>
+    </div>
+    <div class="hero-card rv d2 tilt">
+      <div class="hero-photo"><img src="assets/profile.png" alt="Portrait of Muhammad Furqan Ali" decoding="async" fetchpriority="high"></div>
+      <div class="hero-card-body">
+        <div class="hero-name">Muhammad Furqan Ali</div>
+        <div class="hero-role">Technical Project Manager</div>
+        <div class="hero-fact">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>
+          Project Manager @ Diligent Technologies
+        </div>
+        <div class="hero-fact">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="m3.3 7 8.7 5 8.7-5M12 22V12"/></svg>
+          Backend engineering background
+        </div>
+        <div class="hero-links">
+          <a href="https://github.com/Furkan0091" target="_blank" rel="noopener">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/furkanaliiii/" target="_blank" rel="noopener">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ ABOUT ══════ -->
+<section id="about">
+  <div class="container about-grid">
+    <div class="sec-head rv" style="margin-bottom:0">
+      <div class="eyebrow">About Me</div>
+      <h2>Delivery-first. <span class="accent-2">Engineer-backed.</span></h2>
+    </div>
+    <div class="about-text rv d1">
+      <p>I'm a <strong>Project Manager with a backend engineering background</strong> and hands-on experience across the full software lifecycle — from gathering requirements, planning work and coordinating teams, to managing timelines, communicating with clients, and ensuring projects move from request to release.</p>
+      <p>My engineering background means I understand the technical realities behind every plan — dependencies, constraints, effort — so I can translate them into realistic timelines and clear stakeholder communication. I enjoy working where <strong>technology, people, and delivery</strong> meet.</p>
+      <div class="about-facts">
+        <div class="fact tilt"><b>Project Management</b></div>
+        <div class="fact tilt"><b>Software Delivery</b></div>
+        <div class="fact tilt"><b>Client Communication</b></div>
+        <div class="fact tilt"><b>Backend Engineering</b></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container value-block rv d1">
+    <div class="sec-head center" style="margin-bottom:32px">
+      <div class="eyebrow">How I Add Value</div>
+      <h3 class="group-head">What I aim for at every stage of delivery</h3>
+    </div>
+    <div class="value-grid">
+      <div class="value-item tilt">
+        <div class="value-num">01</div>
+        <h4>From vague to actionable</h4>
+        <p>I turn loose ideas and half-formed requests into requirements, decisions and acceptance criteria a team can act on without guessing.</p>
+      </div>
+      <div class="value-item tilt">
+        <div class="value-num">02</div>
+        <h4>One shared picture</h4>
+        <p>I keep stakeholders and engineers looking at the same plan — same priorities, same deadlines, same definition of done.</p>
+      </div>
+      <div class="value-item tilt">
+        <div class="value-num">03</div>
+        <h4>Delivery without surprises</h4>
+        <p>I surface scope changes, dependencies and risks early, so they become decisions — not last-minute fire drills.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ EXPERIENCE ══════ -->
+<section id="experience">
+  <div class="container">
+    <div class="sec-head rv">
+      <div class="eyebrow">Experience</div>
+      <h2>Professional <span class="accent">journey</span></h2>
+      <p class="sub" style="margin-top:14px">Technical project delivery, grounded in hands-on backend engineering experience.</p>
+    </div>
+    <div class="tl rv d1" id="tl"></div>
+  </div>
+</section>
+
+<!-- ══════ HOW I WORK ══════ -->
+<section id="how-i-work">
+  <div class="container">
+    <div class="sec-head center rv" style="margin-bottom:64px">
+      <div class="eyebrow">How I Work</div>
+      <h2>How I turn requirements <span class="accent">into results</span></h2>
+      <p class="sub" style="margin-top:14px">A repeatable process that moves every engagement from an unclear ask to a delivered outcome.</p>
+    </div>
+    <div class="flow" id="flow"></div>
+    <!-- TODO: if you have a real number per step (avg. cycle time, review cadence), add it to the step copy in STAGES -->
+    <!-- PM scenarios relocated here from the removed "Project Management Scenarios" grid —
+         they are process competency examples, so they live next to the process, not the projects -->
+    <div class="rv d1" style="margin-top:80px">
+      <h3 class="group-head">How I approach common delivery situations</h3>
+      <div class="scenario-list" id="situations"></div>
+    </div>
+    <div class="op-principle rv d1">
+      <span class="op-label">Operating Principle</span>
+      <p>Understand before you plan · Verify before you ship · Debrief after every launch</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ WHY WORK WITH ME ══════
+     Section removed in this pass: its five cards restated the About principles
+     (delivery mindset), the 6-step process (communication, team coordination)
+     and the Skills grid (technical understanding). The two genuinely distinct
+     ideas now live where they can be proven instead:
+       · delivery mindset      → About intro + "How I add value"
+       · technical understanding → the code artifact under Skills
+     The WHY array and renderWhy() were removed with it; layout #whyGrid CSS is
+     gone too, so nothing here is dead code. -->
+
+<!-- ══════ PROJECTS ══════ -->
+<section class="sec-roomy" id="projects">
+  <div class="container">
+    <div class="sec-head center rv">
+      <div class="eyebrow">Featured Projects</div>
+      <h2>Selected <span class="accent">work</span></h2>
+      <p class="sub" style="margin-top:14px">Real products and systems — planned and built end to end. Open any project for its full case study.</p>
+    </div>
+    <p class="conf-note rv">Selected project details are intentionally limited due to client confidentiality.</p>
+    <div class="proj-grid" id="projGrid"></div>
+
+    <div class="proj-quote rv d1">
+      <div class="cube3d" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <span class="op-label">Why This Matters</span>
+      <p>“Every execution is independently retryable and fully logged, so a failure is debuggable instead of mysterious.”</p>
+    </div>
+
+    <h3 class="group-head rv">Additional Engineering Work</h3>
+    <div class="extra-grid" id="extraGrid"></div>
+  </div>
+</section>
+
+<!-- ══════ SKILLS ══════ -->
+<section id="skills">
+  <div class="container">
+    <div class="sec-head center rv">
+      <div class="eyebrow">Skills</div>
+      <h2>What I <span class="accent-2">work with</span></h2>
+    </div>
+    <div class="skill-grid" id="skillGrid"></div>
+
+    <div class="code-artifact rv d1">
+      <div>
+        <div class="eyebrow">Under The Hood</div>
+        <h3 class="group-head">What "understand the code" looks like</h3>
+        <p>This is how I read a system — not the board, the mechanics. Gateways retry, so an event that already landed must never be applied twice. The endpoint below matches each incoming payment to an open invoice, and anything ambiguous goes to a human instead of being auto-applied.</p>
+        <span class="meta-label">Illustrative example · Node.js · Express · PostgreSQL</span>
+        <div class="ua-chain">
+          <span class="ua-chain-label">Technical understanding feeds delivery decisions</span>
+          <div class="ua-chain-row"><span>Architecture</span><i>→</i><span>Dependencies</span><i>→</i><span>Estimation</span><i>→</i><span>Risks</span><i>→</i><span>Priorities</span><i>→</i><span>Delivery</span></div>
+        </div>
+        <!-- TODO: swap this for a real file from one of your repositories if you prefer -->
+      </div>
+      <div class="code-card">
+        <div class="code-head"><i></i><i></i><i></i><span>routes/webhooks.js</span></div>
+        <pre class="code-body"><code><span class="c">// POST /webhooks/payments — replay-safe by design</span>
+router.<span class="f">post</span>(<span class="s">'/webhooks/payments'</span>, <span class="k">async</span> (req, res) =&gt; {
+  <span class="k">const</span> { id: eventId, invoiceId, amount } = req.body;
+
+  <span class="c">// A gateway can retry the same event — never apply it twice</span>
+  <span class="k">if</span> (<span class="k">await</span> db.processedEvent.<span class="f">exists</span>(eventId)) {
+    <span class="k">return</span> res.<span class="f">status</span>(200).<span class="f">json</span>({ status: <span class="s">'already_processed'</span> });
+  }
+
+  <span class="c">// Match it to an open invoice, or park it for a human review</span>
+  <span class="k">const</span> match = <span class="k">await</span> reconcile.<span class="f">match</span>({ invoiceId, amount });
+
+  <span class="k">await</span> db.<span class="p">$transaction</span>([db.payment.<span class="f">create</span>(match), db.processedEvent.<span class="f">record</span>(eventId)]);
+  <span class="k">return</span> res.<span class="f">status</span>(202).<span class="f">json</span>({ status: match.confidence === <span class="s">'high'</span> ? <span class="s">'matched'</span> : <span class="s">'needs_review'</span> });
+});</code></pre>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ EDUCATION ══════ -->
+<section id="education">
+  <div class="container">
+    <div class="sec-head center rv">
+      <div class="eyebrow">Education</div>
+      <h2>Academic <span class="accent">foundation</span></h2>
+      <p class="sub" style="margin-top:14px">Formal engineering training that grounds my delivery work in how software is actually built.</p>
+    </div>
+    <div class="edu-card rv d1 tilt">
+      <div class="edu-degree">BS Software Engineering</div>
+      <div class="edu-note">Degree · <span class="accent">PAF IAST</span> · 2024</div>
+      <div class="edu-areas">
+        <h4>Areas of Study</h4>
+        <div class="skill-tags">
+          <span>Software Project Management</span>
+          <span>Backend Engineering</span>
+          <span>Database Systems</span>
+          <span>Data Analysis</span>
+          <span>Software Quality</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ GITHUB ══════ -->
+<section id="github">
+  <div class="container">
+    <div class="github-band rv">
+      <div class="cube3d" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <h2>Engineering is how a plan earns trust</h2>
+      <p>Delivery-first is the job; engineer-backed is why the timeline holds. I read the schema, the queue and the endpoint before committing to a date — browse the code behind the products I plan, coordinate and ship.</p>
+      <a href="https://github.com/Furkan0091" target="_blank" rel="noopener" class="btn btn-lg">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        View GitHub
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════ CONTACT ══════ -->
+<section id="contact">
+  <div class="container contact-inner">
+    <div class="eyebrow rv" style="margin-bottom:18px">Contact</div>
+    <h2 class="rv d1">Have a project that needs <span class="accent">structure, coordination, and delivery?</span></h2>
+    <p class="sub rv d1" style="margin-top:18px">Let's talk about the project. I bring requirements a team can act on, timelines that hold up, and delivery you can track — with the engineering understanding to keep plans honest. Tell me what you're building.</p>
+    <div class="contact-actions rv d2">
+      <a href="https://www.linkedin.com/in/furkanaliiii/" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>
+        LinkedIn
+      </a>
+      <a href="https://github.com/Furkan0091" target="_blank" rel="noopener" class="btn btn-outline btn-lg">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>
+        GitHub
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <div class="brand">MFA<span>.</span></div>
+    <div>© 2026 Muhammad Furqan Ali · All rights reserved</div>
+    <div class="footer-links">
+      <a href="https://github.com/Furkan0091" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://www.linkedin.com/in/furkanaliiii/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ══════ CASE STUDY MODAL ══════ -->
+<div class="modal" id="csModal" role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="csTitle">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel">
+    <button class="modal-close" data-close aria-label="Close case study">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18M6 6l12 12"/></svg>
+    </button>
+    <div class="modal-body" id="csBody"></div>
+  </div>
+</div>
+
+<script>
+/* ═════════ DATA ═════════ */
+
+/* ══ FLAGGED THIS PASS — bullets that want a real number ══════════════
+   Every "Key Impact" bullet below now opens with a concrete outcome, but a
+   measured figure would make each one land harder. No numbers were invented,
+   so wherever you see one of these, drop in your real data:
+     · Diligent — "Led client projects end to end…"     → how many projects / accounts, team size
+     · Diligent — "Converted one-off deliveries…"        → repeat engagements or renewals won
+     · EZMD     — "Shipped and maintained production…"   → endpoints shipped, requests/day, uptime %
+     · EZMD     — "Cut integration friction…"            → manual handoffs removed
+     · Sabzland — "Replaced manual internal workflows…"  → workflows automated, hours saved per week
+   The duty bullets (EXPERIENCE[].points) were left untouched — they are
+   already specific and factual.
+   ══════════════════════════════════════════════════════════════════ */
+
+const EXPERIENCE = [
+  {
+    period: '2025 — Present',
+    role: 'Project Coordinator',
+    co: 'Diligent Technologies',
+    points: [
+      'Translated client requirements into actionable development tasks and coordinated progress with engineering teams.',
+      'Tracked priorities, blockers and dependencies across frontend, backend and QA workflows throughout the delivery lifecycle.',
+      'Kept clients and stakeholders aligned with clear, consistent progress communication.'
+    ],
+    impact: [
+      'Led client projects end to end — kickoff to handover — against fixed milestones, with written progress reporting at every stage.',
+      'Converted one-off deliveries into repeat engagements by keeping scope, risks and timelines visible to the client throughout.',
+      'Kept delivery moving day to day by keeping priorities clear and clearing blockers as they surfaced.'
+    ],
+    tags: ['Project Delivery', 'Timeline Planning', 'Stakeholder Management', 'Team Leadership']
+  },
+  {
+    period: '2024 — 2025',
+    role: 'Software Developer — Backend',
+    co: 'EZMD Solutions',
+    points: [
+      'Worked with relational and NoSQL databases, plus third-party integrations.',
+      'Supported development, QA, and deployment workflows with clean technical handoffs.'
+    ],
+    impact: [
+      'Shipped and maintained production REST APIs in Node.js, Express and FastAPI that served live products rather than prototypes.',
+      'Cut integration friction by documenting each service contract, so development, QA and deployment handoffs needed no re-explaining.',
+      'Held services stable and scalable as the feature set grew, prioritising reliability work over firefighting.'
+    ],
+    tags: ['Node.js', 'Express.js', 'FastAPI', 'REST APIs', 'PostgreSQL', 'MongoDB']
+  },
+  {
+    period: '2024',
+    role: 'Backend Developer',
+    co: 'Sabzland',
+    points: [
+      'Built and maintained backend services and RESTful APIs with Python and FastAPI.',
+      'Designed database schemas and worked with relational and NoSQL databases to support application features.',
+      'Integrated third-party services and automated internal workflows to replace manual processes.'
+    ],
+    impact: [
+      'Built and shipped the backend services and REST APIs behind live product features in Python and FastAPI.',
+      'Replaced manual internal workflows with automated backend processes that run unattended.',
+      'Kept services stable and documented as the feature set grew, so later changes were safe to make.'
+    ],
+    tags: ['Python', 'FastAPI', 'REST APIs', 'PostgreSQL', 'MongoDB', 'Integrations']
+  }
+];
+
+const STAGES = [
+  { n: '01', t: 'Discover', d: 'Understand business goals, requirements, stakeholders and constraints.' },
+  { n: '02', t: 'Define', d: 'Clarify scope, priorities, acceptance criteria and dependencies.' },
+  { n: '03', t: 'Plan', d: 'Break requirements into milestones, tasks and sprint priorities.' },
+  { n: '04', t: 'Coordinate', d: 'Align clients, developers, designers, QA and other stakeholders.' },
+  { n: '05', t: 'Validate', d: 'Track implementation, blockers, quality, requirements and feedback.' },
+  { n: '06', t: 'Deliver', d: 'Coordinate final delivery, communication and project closure.' }
+];
+
+/* WHY array removed — the five cards restated the About principles, the
+   6-step process and the Skills grid. Distinct ideas now live in About
+   (delivery mindset) and the code artifact under Skills (technical
+   understanding). See the note in the markup where the section used to be. */
+
+/* Skills are grouped to support the PM positioning: delivery process first,
+   people second, engineering understanding third, tools last. Only skills
+   evidenced by the experience/projects above are listed. The LAST category
+   hosts the skills ring canvas (initRingScene reads its items). */
+const SKILL_CATS = [
+  {
+    name: 'Project & Delivery',
+    note: 'From requirements to release',
+    items: ['Requirement Gathering', 'Scope Definition', 'Acceptance Criteria', 'Sprint Planning', 'Agile & Scrum', 'Kanban', 'Task Breakdown', 'Timeline & Milestone Planning', 'Risk & Issue Management', 'Prioritization']
+  },
+  {
+    name: 'Communication & Leadership',
+    note: 'Clients & engineering teams',
+    items: ['Client Communication', 'Stakeholder Management', 'Status Reporting', 'Team Coordination & Coaching', 'Cross-functional Alignment', 'Escalation Management']
+  },
+  {
+    name: 'Engineering Understanding',
+    note: 'How the work gets built',
+    items: ['Backend Architecture', 'REST API Design', 'Database Modelling', 'Third-party Integrations', 'QA & Deployment Workflows', 'Technical Feasibility']
+  },
+  {
+    name: 'Tools & Environment',
+    note: 'The technical workspace',
+    items: ['Git & GitHub', 'Linux', 'Node.js', 'Express.js', 'FastAPI', 'Python', 'PostgreSQL', 'MongoDB', 'Redis', 'React']
+  }
+];
+
+/* Outcome line per project card (`metric`). These state outcomes that the
+   project details above already describe — nothing is claimed that the copy
+   does not support. TODO: if you have a measured figure, swap it in — e.g.
+   "cut reconciliation from 3 days to 4 hours", "reduced failed integrations
+   by 38%" — real numbers in this slot are the single biggest upgrade left. */
+const PROJECTS = [
+  {
+    name: 'StorePilot',
+    tagline: 'B2B Sales Order & Inventory Management Platform',
+    role: 'Defined the requirements and architecture, built the backend, and took it from first spec to release.',
+    category: 'E-commerce · Order Management',
+    status: 'live',
+    statusLabel: 'Built',
+    desc: 'A sales-order platform for B2B wholesalers — quoting, inventory reservations, order fulfilment, invoicing and customer accounts in one continuous flow.',
+    metric: 'Quote, confirmation, invoice and payment status in one pipeline — stock is reserved at confirmation, so an order can never oversell.',
+    stack: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Redis', 'BullMQ'],
+    highlights: ['Quote-to-order workflow', 'Live inventory reservations', 'Multi-step fulfilment tracking', 'Invoice generation & payment status', 'Customer pricing tiers & credit limits'],
+    live: null,
+    caseStudy: 'storepilot',
+    featured: true
+  },
+  {
+    name: 'PayLedger',
+    tagline: 'Payment & Reconciliation Platform',
+    role: 'Owned the full delivery — requirements, backend build, payment-gateway integration and release.',
+    category: 'Fintech · Payments',
+    priority: true,
+    status: 'live',
+    statusLabel: 'Built',
+    desc: 'A fintech platform for collecting payments, generating invoices, and reconciling transactions against open invoices automatically — with retries, reminders and discrepancy handling.',
+    metric: 'Every incoming payment is matched to an open invoice automatically; only ambiguous or partial cases reach a human review queue.',
+    stack: ['Node.js', 'Express', 'PostgreSQL', 'Redis', 'BullMQ'],
+    highlights: ['Invoice generation & delivery', 'Payment links & gateway collection', 'Automatic payment matching', 'Failed-payment retries & reminders', 'Settlement & ageing reports'],
+    live: null,
+    caseStudy: 'payledger'
+  },
+  {
+    name: 'ClientNest',
+    tagline: 'Booking & Client Management Platform',
+    role: 'Planned the scope, designed the data model, and delivered the platform from requirements to release.',
+    category: 'Booking · CRM',
+    priority: true,
+    status: 'live',
+    statusLabel: 'Built',
+    desc: 'A booking and client-management platform for service businesses — availability, appointments, client history, automated reminders and follow-ups in one place.',
+    metric: 'Slot booking is a single atomic transaction — two clients can never end up holding the same appointment.',
+    stack: ['React', 'Node.js', 'Express', 'PostgreSQL', 'Prisma'],
+    highlights: ['Calendar availability & conflict detection', 'Self-service online booking', 'Client history & notes', 'Automated reminders & follow-ups', 'Staff & service management'],
+    live: null,
+    caseStudy: 'clientnest'
+  },
+  {
+    name: 'CogniLead',
+    tagline: 'AI Lead Scoring & Document Intelligence',
+    role: 'Designed the pipeline stages, built the backend services, and kept the scoring explainable.',
+    category: 'AI · Data Pipeline',
+    status: 'live',
+    statusLabel: 'Built',
+    desc: 'An AI-powered pipeline that ingests documents, extracts key entities and scores leads — helping sales teams prioritise the right prospects with explainable scoring.',
+    metric: 'Every lead score returns a named, weighted breakdown, so "why 87?" always has an answer a salesperson can act on.',
+    stack: ['Python', 'FastAPI', 'PostgreSQL', 'Redis', 'LLM APIs'],
+    highlights: ['Document ingestion & parsing', 'Entity extraction — contacts, budgets, needs', 'AI-powered lead scoring', 'Explainable score breakdowns', 'CRM export & follow-up nudges'],
+    live: null,
+    caseStudy: 'cognilead'
+  },
+  {
+    name: 'TaskFlow',
+    tagline: 'Collaborative Project & Task Management Platform',
+    role: 'Turned a requirements list into a structured build plan and shipped the product end to end.',
+    category: 'Full-Stack SaaS',
+    status: 'live',
+    statusLabel: 'Built',
+    desc: 'A full-stack project management platform designed around team collaboration, task workflows and project visibility — bringing structured planning and real-time tracking into one place.',
+    metric: 'Planning, assignment, progress and activity tracked in one system instead of chat threads and spreadsheets.',
+    stack: ['React', 'Node.js', 'Express', 'MongoDB', 'JWT'],
+    highlights: ['Kanban workflows', 'Team collaboration', 'Task lifecycle management', 'Activity tracking'],
+    github: 'https://github.com/Furkan0091', /* TODO: replace with TaskFlow repo URL */
+    live: null,
+    caseStudy: 'taskflow'
+  },
+  {
+    name: 'WebPulse',
+    tagline: 'Website Monitoring & Incident Detection Platform',
+    role: 'Designed the monitoring architecture and delivered the platform from spec to production.',
+    category: 'Monitoring SaaS',
+    status: 'live',
+    statusLabel: 'Built',
+    desc: 'Real-time website and API monitoring platform with background workers, incident detection, alerting, uptime analytics, and public status pages.',
+    metric: 'A failure is confirmed by threshold and retry before an alert fires — transient blips never page anyone.',
+    stack: ['Node.js', 'TypeScript', 'PostgreSQL', 'BullMQ', 'React'],
+    highlights: ['Background monitoring engine', 'Incident lifecycle & recovery', 'Real-time dashboard updates', 'Uptime & response-time analytics', 'Production-grade security'],
+    github: 'https://github.com/Furkan0091',
+    live: null,
+    caseStudy: 'webpulse'
+  },
+  {
+    name: 'FlowForge',
+    tagline: 'Visual Workflow Automation Platform',
+    role: 'Designed the execution model and delivered the engine, builder and monitoring end to end.',
+    category: 'Automation Engine',
+    status: 'live',
+    statusLabel: 'Built',
+    desc: 'Visual automation platform for building and executing event-driven workflows with queues, integrations, retries, and execution monitoring.',
+    metric: 'Every execution is independently retryable and fully logged, so a failure is debuggable instead of mysterious.',
+    stack: ['Node.js', 'TypeScript', 'PostgreSQL', 'Redis', 'BullMQ'],
+    highlights: ['Visual workflow engine', 'Asynchronous job processing', 'Webhook & API integrations', 'Execution history & debugging', 'Retry & failure handling'],
+    github: 'https://github.com/Furkan0091',
+    live: null,
+    caseStudy: 'flowforge'
+  },
+];
+
+const EXTRA_PROJECTS = [
+  {
+    name: 'Lead Verification System',
+    category: 'Backend · Automation',
+    desc: 'Backend service for verifying and validating leads — API-driven checks, database operations, and automated workflows with robust error handling.',
+    github: 'https://github.com/Furkan0091'
+  },
+  {
+    name: 'House Inspection System',
+    category: 'Backend · Workflow',
+    desc: 'Business workflow application for managing property inspections — structured intake, inspection tracking, and reporting workflows.',
+    github: 'https://github.com/Furkan0091'
+  }
+];
+
+const CASE_STUDIES = [
+  /* ── Project case studies ── */
+  {
+    id: 'taskflow',
+    type: 'project',
+    badge: 'Project Case Study',
+    title: 'From a Requirements List to a Shipped Product',
+    subtitle: 'TaskFlow — from requirements to a shipped product.',
+    intro: 'How a full-stack project management platform went from a list of requirements to a structured, working product.',
+    sections: [
+      { h: 'Project Overview', t: 'TaskFlow is a collaborative project and task management platform that brings team management, Kanban workflows, task assignment, priorities, deadlines, subtasks, comments, activity logs, recurring tasks and authentication into one structured product.' },
+      { h: 'Business Problem', t: 'Teams frequently spread work across chat, spreadsheets and disconnected tools. Without a centralized system, assigning work, tracking progress and maintaining visibility become difficult and error-prone.' },
+      { h: 'Objective', t: 'Build a platform that makes project and task management more structured and transparent — a single place to plan, assign and track work.' },
+      { h: 'Requirements', list: ['Authentication', 'Project management', 'Team management', 'Task management', 'Kanban workflow', 'Comments', 'Activity tracking', 'Recurring tasks'] },
+      { h: 'Planning', t: 'The system was divided into focused modules — authentication, core project management, task management, collaboration and activity tracking — so each area could be designed, built and tested incrementally rather than as one monolithic effort.' },
+      { h: 'Execution', t: 'Backend services and REST endpoints were developed alongside the frontend. Database relationships were modeled around projects, users, tasks and their interactions, while authentication and authorization were addressed early because permissions affect every other feature.' },
+      { h: 'Technical Architecture', list: ['REST API architecture', 'Database design — projects, users, tasks', 'JWT authentication', 'API communication & state management', 'Authorization & permissions'] },
+      { h: 'Challenges', list: ['Managing task state transitions across the workflow', 'Modeling relationships between projects, users and tasks', 'Keeping permissions consistent across every API route', 'Tracking activity without hurting performance'] },
+      { h: 'Solutions', t: 'Clear state models for tasks, explicit relationship design between core entities, centralized permission checks, and a lightweight activity-logging approach.' },
+      { h: 'Outcome', t: 'A complete platform that demonstrates full-stack delivery — from product thinking and backend architecture to a usable, structured interface.' },
+      { h: 'Lessons Learned', t: 'Planning the data model and permission model up front pays off. Task and permission complexity grows quickly, and it is far cheaper to design correctly early than to retrofit later.' }
+    ]
+  },
+  {
+    id: 'webpulse',
+    type: 'project',
+    badge: 'Project Case Study',
+    title: 'Catching Downtime Before Your Users Report It',
+    subtitle: 'WebPulse — monitoring, incident detection, alerting and recovery.',
+    intro: 'From scheduled checks to background workers, failure confirmation, incident lifecycle, alerting and analytics — how WebPulse keeps services visible.',
+    sections: [
+      { h: 'Project Overview', t: 'WebPulse is a website and API monitoring platform that continuously monitors websites, APIs, SSL certificates and DNS. It detects downtime and degraded performance, creates incidents, sends alerts, tracks recovery, and provides uptime and response-time analytics.' },
+      { h: 'Problem', t: 'Teams often discover website or API failures only after users report them. Basic uptime checks also generate noisy alerts from temporary failures, drowning out genuine incidents.' },
+      { h: 'Solution', t: 'WebPulse continuously checks configured services, confirms failures using configurable thresholds and retry mechanisms, creates structured incidents, sends alerts, and tracks recovery and historical performance.' },
+      { h: 'Monitoring Architecture', steps: ['Scheduler', 'Redis Queue', 'Monitoring Worker', 'Check Engine', 'Incident Engine', 'Notification Queue', 'Analytics'] },
+      { h: 'Background Jobs', t: 'WebPulse uses scheduled background jobs and worker processes to execute monitoring checks independently from the main API server. Redis and BullMQ handle queued monitoring and notification jobs, so checks never block the API and scale independently of request traffic.' },
+      { h: 'Failure Detection', t: 'Configurable failure thresholds and retry mechanisms confirm a real failure before an incident is created — reducing alert noise from transient errors while catching genuine downtime.' },
+      { h: 'Incident Lifecycle', list: ['Incident creation and lifecycle management', 'Incident timelines', 'Incident acknowledgement', 'Recovery detection and recovery notifications', 'Alert deduplication'] },
+      { h: 'Alerting', list: ['Email and webhook notifications', 'Alert deduplication', 'Maintenance windows to suppress expected downtime', 'Escalation on unacknowledged incidents'] },
+      { h: 'Analytics & Status', list: ['Uptime analytics and SLA monitoring', 'Response-time analytics', 'Public status pages', 'Real-time dashboard updates via WebSockets'] },
+      { h: 'Technical Stack', list: ['React, TypeScript, Tailwind CSS', 'Node.js, Express.js, TypeScript', 'PostgreSQL with Prisma', 'Redis & BullMQ for background jobs', 'WebSockets / Socket.IO for real-time updates', 'REST API with OpenAPI / Swagger', 'Jest / Vitest + Supertest'] },
+      { h: 'Security & Reliability', list: ['Authentication and role-based access control', 'Organization isolation', 'API keys for programmatic access', 'Rate limiting and SSRF protection', 'Audit logs'] },
+      { h: 'Outcome', t: 'A production-oriented monitoring platform that demonstrates backend engineering and system-design thinking — asynchronous processing, reliability, incident management and operational analytics in one product.' }
+    ]
+  },
+  {
+    id: 'flowforge',
+    type: 'project',
+    badge: 'Project Case Study',
+    title: 'Designing an Engine That Fails Gracefully and Retries Itself',
+    subtitle: 'FlowForge — from visual workflows to dependable execution.',
+    intro: 'How a visual workflow editor is backed by an execution engine that turns workflow definitions into reliable, retryable background jobs.',
+    sections: [
+      { h: 'Project Overview', t: 'FlowForge is a visual workflow automation platform where users build automated workflows by connecting triggers, conditions and actions — then execute, monitor and troubleshoot them.' },
+      { h: 'Problem', t: 'Teams repeatedly perform the same multi-step actions across APIs, databases, notifications and internal systems. Doing this manually is slow, inconsistent and hard to trace.' },
+      { h: 'Solution', t: 'FlowForge represents those steps as reusable workflows that execute automatically based on events, schedules or webhooks — with full execution history and failure handling.' },
+      { h: 'Workflow Model', list: ['Trigger nodes — webhook, schedule', 'Action nodes — HTTP request, email, database', 'Condition nodes — conditional branches and variables', 'Workflow versioning, duplication, enable/disable', 'Per-node configuration'] },
+      { h: 'Execution Engine', t: 'The visual workflow editor is backed by an execution engine that converts workflow definitions into executable jobs. Each workflow definition is validated and compiled into a runnable graph before execution.' },
+      { h: 'Queue Architecture', steps: ['Workflow Builder', 'Workflow Definition', 'Execution Engine', 'Redis Queue', 'Worker', 'Node Execution', 'Execution Result', 'Logs / Notifications'] },
+      { h: 'Retry Strategy', t: 'Long-running and asynchronous operations are processed through queues and workers, allowing individual workflow executions to be retried and monitored independently — without blocking the main API.' },
+      { h: 'Failure Handling', list: ['Failed execution handling', 'Retry failed workflows', 'Execution status tracking', 'Execution logs for troubleshooting'] },
+      { h: 'Example Workflow', steps: ['Webhook received', 'Validate payload', 'Condition — valid or invalid', 'Valid → store data → send email', 'Invalid → log failure'] },
+      { h: 'Technical Stack', list: ['React, TypeScript, Tailwind CSS', 'Node.js, Express.js, TypeScript', 'PostgreSQL with Prisma', 'Redis & BullMQ for queueing', 'REST API + webhooks', 'WebSockets for live execution updates'] },
+      { h: 'Lessons Learned', t: 'The workflow engine is the product — not the editor. Designing the execution model, queueing and retry semantics up front is what makes the platform reliable under real workload.' }
+    ]
+  },
+  {
+    id: 'storepilot',
+    type: 'project',
+    badge: 'Project Case Study',
+    title: 'Building a B2B Sales Order Pipeline That Never Loses a Sale',
+    subtitle: 'StorePilot — from quote to paid invoice in one flow.',
+    intro: 'How a sales-order platform replaces spreadsheets with a single pipeline — quoting, inventory, fulfilment and invoicing.',
+    sections: [
+      { h: 'Project Overview', t: 'StorePilot is a sales-order platform built for B2B wholesalers who sell to retailers. It replaces scattered spreadsheets and email threads with one pipeline: a customer requests a quote, inventory gets reserved, the order is confirmed, picked, packed, shipped and invoiced — with every step visible to both the sales team and the customer.' },
+      { h: 'Business Problem', t: 'Wholesalers typically take orders by phone and email, then re-enter them into spreadsheets. Stock gets double-booked, invoices lag shipments, and nobody can answer "where is my order?" without chasing three people.' },
+      { h: 'Who It Serves', list: ['Sales representatives creating quotes and orders', 'Warehouse staff managing picking and dispatch', 'Finance generating invoices and tracking payments', 'Customers tracking their own orders'] },
+      { h: 'Key Requirements', list: ['Customer accounts with pricing tiers and credit limits', 'Quote-to-order workflow with revision history', 'Real-time inventory reservations to prevent overselling', 'Fulfilment states — pending, picked, packed, shipped, delivered', 'Invoice generation with payment status tracking', 'Role-based access for sales, warehouse and finance'] },
+      { h: 'System Architecture', flow: ['Sales Rep Creates Quote', 'Customer Approves', 'Order Confirmed & Stock Reserved', 'Fulfilment Pipeline', 'Invoice Generated', 'Payment Tracked'] },
+      { h: 'Planning & Execution', t: 'The system was split into three tracks — quoting and ordering, inventory reservation, and fulfilment plus invoicing — so each area could be built and tested against its own contract while still sharing one database. Inventory reservation was modelled first, because every other feature depends on knowing what is actually available.' },
+      { h: 'Challenges', list: ['Preventing overselling when two orders hit the same stock at once', 'Keeping order status in sync across quoting, fulfilment and invoicing', 'Handling partial shipments without breaking the invoice'] },
+      { h: 'Solutions', t: 'Inventory reservations were made atomic at the database level, so a confirmed order locks stock before anything else happens. Order state was modelled as a single source of truth with explicit transitions, and invoicing was tied to fulfilment events so partial shipments generate accurate line-item invoices.' },
+      { h: 'Outcome', t: 'A single pipeline from quote to paid invoice. Orders stop getting lost in spreadsheets, stock is reserved the moment an order is confirmed, and customers can track their order without calling anyone.' },
+      { h: 'Lessons Learned', t: 'An order management system is really a state machine with a database in front. Defining every status transition — and who is allowed to trigger it — before writing feature code is what keeps the whole thing consistent.' }
+    ]
+  },
+  {
+    id: 'payledger',
+    type: 'project',
+    badge: 'Project Case Study',
+    title: 'Designing Payments That Reconcile Themselves',
+    subtitle: 'PayLedger — invoicing, collection and reconciliation without the spreadsheet marathon.',
+    intro: 'How a payment platform matches invoices to money in, retries failures safely, and surfaces discrepancies instead of hiding them.',
+    sections: [
+      { h: 'Project Overview', t: 'PayLedger is a payment and reconciliation platform for small businesses that bill customers by invoice. It generates invoices, collects payments through payment links and gateways, matches those payments against open invoices, and flags discrepancies for the finance team — turning month-end reconciliation from a spreadsheet marathon into a review screen.' },
+      { h: 'Business Problem', t: 'Most small businesses track who has paid using a bank statement and a list of invoices. Matching payments to invoices by hand is slow and error-prone, and overdue invoices quietly slip through the cracks.' },
+      { h: 'Who It Serves', list: ['Business owners sending invoices', 'Finance staff reconciling payments', 'Customers paying invoices online', 'Accountants reviewing settlement reports'] },
+      { h: 'Key Requirements', list: ['Invoice creation with due dates and line items', 'Payment links that customers can open without an account', 'Automatic matching of incoming payments to invoices', 'Retry and reminder workflow for overdue invoices', 'Discrepancy queue for unmatched or partial payments', 'Settlement and ageing reports'] },
+      { h: 'System Architecture', flow: ['Invoice Issued', 'Payment Link Shared', 'Customer Pays', 'Webhook Received', 'Payment Matched to Invoice', 'Discrepancy Queue / Report'] },
+      { h: 'Planning & Execution', t: 'The core loop — invoice, payment link, webhook, match — was built end to end first as a thin vertical slice. Only after that loop worked reliably did we add reminders, reports and the discrepancy queue, so the riskiest part of the system was proven early.' },
+      { h: 'Challenges', list: ['Matching payments when customers pay multiple invoices at once', 'Handling partial payments and gateway fees that change the settled amount', 'Dealing with duplicate webhooks from the payment gateway'] },
+      { h: 'Solutions', t: 'Matching used an amount-and-reference strategy with a confidence score, and anything ambiguous went to a discrepancy queue instead of being auto-applied. Webhooks were made idempotent with a processed-events table, and settlement amounts were reconciled against gateway fees separately from invoice totals.' },
+      { h: 'Outcome', t: 'Invoices get paid faster because payments are easy for customers, and finance spends minutes instead of days on reconciliation. Overdue invoices get automatic reminders, so cash flow stops depending on someone manually chasing.' },
+      { h: 'Lessons Learned', t: 'Payment integrations are full of edge cases — partial payments, fees, duplicate callbacks. Designing for idempotency and a human-review queue up front is what separates a payment platform from a payment script.' }
+    ]
+  },
+  {
+    id: 'clientnest',
+    type: 'project',
+    badge: 'Project Case Study',
+    title: 'Building a Booking System That Never Double-Books',
+    subtitle: 'ClientNest — appointments, client records and follow-ups in one place.',
+    intro: 'How a booking platform keeps the diary conflict-free, clients self-serve, and no-shows low.',
+    sections: [
+      { h: 'Project Overview', t: 'ClientNest is a booking and client-management platform for service businesses — clinics, salons, consultants and agencies. Clients book appointments online against real staff availability, and the business gets a complete client record: past visits, notes, preferences and follow-up tasks, with automated reminders to reduce no-shows.' },
+      { h: 'Business Problem', t: 'Service businesses run on phone bookings, paper diaries and scattered client notes. Double-bookings happen, reminders are forgotten, and client history lives in whoever remembers it. Growth stalls because the owner is the only one who knows the schedule.' },
+      { h: 'Who It Serves', list: ['Front-desk staff managing the diary', 'Service providers with their own schedules', 'Clients booking and rescheduling online', 'Owners reviewing occupancy and revenue'] },
+      { h: 'Key Requirements', list: ['Staff schedules with service durations', 'Conflict-free booking with real-time availability', 'Client self-service booking and rescheduling', 'Client profiles with visit history and notes', 'Automated SMS/email reminders and follow-ups', 'Daily schedule view for staff'] },
+      { h: 'System Architecture', flow: ['Client Picks Service', 'Availability Checked', 'Slot Reserved', 'Appointment Confirmed', 'Reminder Sent', 'Visit Completed & Logged'] },
+      { h: 'Planning & Execution', t: 'Availability was modelled as slots generated from staff schedules and service durations — the single most important decision in the system. Everything else — booking, rescheduling, reminders — is an operation on those slots, so getting the slot model right made every other feature straightforward.' },
+      { h: 'Challenges', list: ['Preventing double-bookings when two clients book the same slot simultaneously', 'Handling reschedules and cancellations without leaving gaps or overlaps', 'Keeping reminders in sync with schedule changes'] },
+      { h: 'Solutions', t: 'Slot booking was made atomic with database-level conflict checks, so two clients can never take the same slot. Rescheduling released the old slot and reserved the new one in a single transaction, and reminders were regenerated from the live schedule every night rather than stored statically.' },
+      { h: 'Outcome', t: 'Clients book themselves without phone tag, the diary is always conflict-free, and no-shows drop because reminders are automatic. The owner gets a real picture of occupancy and revenue instead of a paper diary.' },
+      { h: 'Lessons Learned', t: 'The scheduling model is the product. Getting slot generation, conflict rules and the booking transaction right is hard; everything else — reminders, follow-ups, reports — becomes simple once that foundation is solid.' }
+    ]
+  },
+  {
+    id: 'cognilead',
+    type: 'project',
+    badge: 'Project Case Study',
+    title: 'Building an AI Pipeline That Scores Leads and Explains Why',
+    subtitle: 'CogniLead — document intelligence for sales teams.',
+    intro: 'How an AI pipeline ingests messy documents, extracts structured signals, and scores leads without becoming a black box.',
+    sections: [
+      { h: 'Project Overview', t: 'CogniLead is an AI-assisted lead-intelligence pipeline for B2B sales teams. It ingests inbound documents — enquiry forms, emails, proposals, meeting notes — extracts structured signals like company size, budget, urgency and decision-maker contact, and scores each lead so salespeople work the highest-value prospects first.' },
+      { h: 'Business Problem', t: 'Sales teams drown in inbound noise. Leads sit in shared inboxes, get scored by gut feel, and high-value prospects are discovered weeks later. Teams needed a way to triage leads consistently and explain why one lead is hotter than another.' },
+      { h: 'Who It Serves', list: ['Sales representatives prioritising their pipeline', 'SDRs triaging inbound enquiries', 'Sales managers reviewing lead quality', 'Marketing measuring which channels produce real leads'] },
+      { h: 'Key Requirements', list: ['Ingestion of documents from email, web forms and uploads', 'Entity extraction — names, companies, budgets, timelines', 'Lead scoring with a transparent, explainable breakdown', 'Confidence scoring on extracted data', 'Pipeline views by score, channel and stage', 'Export to CRM and follow-up reminders'] },
+      { h: 'System Architecture', flow: ['Document Ingestion', 'Parsing & Cleaning', 'Entity Extraction', 'Signal Scoring', 'Lead Score Computed', 'CRM Export & Nudge'] },
+      { h: 'Planning & Execution', t: 'The pipeline was built as stages — ingest, parse, extract, score, export — with each stage writing to the database so any stage can be re-run independently. The scoring model was kept rule-transparent: every score is a weighted sum of named signals, so "why 87?" always has an answer.' },
+      { h: 'Challenges', list: ['Extracting reliable entities from messy, unstructured documents', 'Keeping scores explainable instead of a black box', 'Handling low-confidence extractions without silently dropping leads'] },
+      { h: 'Solutions', t: 'Extraction ran with confidence thresholds — low-confidence fields are flagged for human review instead of guessed. The scoring model uses named, weighted signals so salespeople see exactly why a lead scored high, and the pipeline logs every extraction for auditability.' },
+      { h: 'Outcome', t: 'Sales teams work a scored, prioritised pipeline instead of an inbox. High-value leads surface in hours instead of weeks, and score breakdowns give salespeople a natural opening for first contact — "I saw you\'re evaluating payroll software…"' },
+      { h: 'Lessons Learned', t: 'AI is only useful when it is explainable and auditable. The model quality matters less than trust — if salespeople cannot see why a lead scored 87, they will ignore the score no matter how accurate it is.' }
+    ]
+  },
+  /* ── PM scenarios ── */
+  {
+    id: 'scenario-a',
+    type: 'scenario',
+    badge: 'Project Management Scenario',
+    title: 'Turning a Client Requirement Into an Executable Project Plan',
+    subtitle: 'From a high-level ask to scoped, prioritized work.',
+    intro: 'How a vague client request becomes a clear, prioritized, executable project plan.',
+    sections: [
+      { h: 'Approach', t: 'A client request rarely arrives as a ready-to-build specification. The job is to clarify ambiguity, define scope, and convert it into prioritized, assignable work with clear milestones.' },
+      { h: 'From Requirement to Delivery', steps: ['Client requirement', 'Requirement clarification', 'Scope definition', 'User stories', 'Task breakdown', 'Prioritization', 'Sprint planning', 'Development', 'QA', 'Client review', 'Delivery'] },
+      { h: 'Why This Matters', t: 'This flow ensures the team builds the right thing, stakeholders stay aligned, and scope stays controlled throughout delivery.' }
+    ]
+  },
+  {
+    id: 'scenario-b',
+    type: 'scenario',
+    badge: 'Project Management Scenario',
+    title: 'Managing a Project With a Tight Deadline',
+    subtitle: 'Delivery under pressure — prioritization over heroics.',
+    intro: 'How to deliver value on a tight timeline through scope control and communication.',
+    sections: [
+      { h: 'Approach', t: 'A tight deadline forces hard choices. The focus shifts to defining the minimum viable outcome, protecting the critical path, and keeping stakeholders informed with realistic, frequent updates.' },
+      { h: 'Key Moves', list: ['Scope prioritization', 'MVP definition', 'Resource allocation', 'Dependency identification', 'Risk management', 'Communication', 'Progress tracking', 'Delivery'] },
+      { h: 'Why This Matters', t: 'Clear prioritization and honest communication are what let a team hit a deadline without quietly sacrificing quality.' }
+    ]
+  },
+  {
+    id: 'scenario-c',
+    type: 'scenario',
+    badge: 'Project Management Scenario',
+    title: 'Managing Scope Changes During Development',
+    subtitle: 'Handling new requests without derailing the plan.',
+    intro: 'A controlled process for absorbing new client requests mid-flight.',
+    sections: [
+      { h: 'Approach', t: 'Scope changes are normal. The key is a controlled process: understand the request, measure its impact, and get explicit alignment before it enters the plan.' },
+      { h: 'The Change Process', steps: ['New client request', 'Impact analysis', 'Technical discussion', 'Timeline impact', 'Priority assessment', 'Client communication', 'Approval', 'Task update', 'Development', 'QA', 'Delivery'] },
+      { h: 'Why This Matters', t: 'A defined change process protects the timeline, the team and the client relationship — changes happen, but surprises should not.' }
+    ]
+  }
+];
+
+/* ═════════ ICONS ═════════ */
+const ICON = {
+  arrowRight: '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>',
+  external: '<svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M7 17 17 7M7 7h10v10"/></svg>',
+  trend: '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M3 17l6-6 4 4 8-8"/><path d="M17 7h4v4"/></svg>',
+  github: '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/></svg>'
+};
+
+/* ═════════ RENDER ═════════ */
+
+function renderExperience(){
+  document.getElementById('tl').innerHTML = EXPERIENCE.map((e, i) => `
+    <div class="tl-item rv d${i} rv-x">
+      <div class="tl-dot"></div>
+      <div class="tl-period">${e.period}</div>
+      <div class="tl-role">${e.role}</div>
+      <div class="tl-co">${e.co}</div>
+      ${e.impact ? `<div class="tl-impact tilt"><div class="tl-impact-label">Key Impact</div><ul class="tl-impact-points">${e.impact.map(p => `<li>${p}</li>`).join('')}</ul></div>` : ''}
+      <ul class="tl-points">${e.points.map(p => `<li>${p}</li>`).join('')}</ul>
+      <div class="tl-tags">${e.tags.map(t => `<span class="tl-tag">${t}</span>`).join('')}</div>
+    </div>`).join('');
+}
+
+function renderFlow(){
+  document.getElementById('flow').innerHTML = STAGES.map((s, i) => `
+    <div class="flow-step rv rv-x d${i}">
+      <span class="flow-num">${s.n}</span>
+      <h3>${s.t}</h3>
+      <p>${s.d}</p>
+    </div>`).join('');
+}
+
+function renderPipeline(){
+  document.getElementById('pipelineTrack').innerHTML = STAGES.map((s, i) =>
+    `<span class="pipe-stage" data-i="${i}"><span class="pipe-num">${s.n}</span>${s.t}</span>${i < STAGES.length - 1 ? '<span class="pipe-arrow">→</span>' : ''}`
+  ).join('');
+}
+
+function renderSkills(){
+  document.getElementById('skillGrid').innerHTML = SKILL_CATS.map((c, i) => `
+    <div class="skill-cat rv d${i % 2} tilt">
+      <h3>${c.name}</h3>
+      <div class="cat-note">${c.note}</div>
+      <div class="skill-tags">${c.items.map(x => `<span>${x}</span>`).join('')}</div>
+      ${i === SKILL_CATS.length - 1 ? '<div class="ring-wrap"><canvas id="skillRing" aria-hidden="true"></canvas></div>' : ''}
+    </div>`).join('');
+}
+
+function projectActions(p){
+  const btns = [];
+  if (p.caseStudy) btns.push(`<button class="btn btn-primary" data-cs="${p.caseStudy}">View Case Study ${ICON.arrowRight}</button>`);
+  if (p.live) btns.push(`<a class="btn btn-outline" href="${p.live}" target="_blank" rel="noopener">${ICON.external} Live Demo</a>`);
+  if (p.github) btns.push(`<a class="btn btn-outline" href="${p.github}" target="_blank" rel="noopener">${ICON.github} View on GitHub</a>`);
+  return btns.join('');
+}
+
+function renderProjects(){
+  const grid = document.getElementById('projGrid');
+  grid.innerHTML = PROJECTS.map(p => {
+    const statusClass = '';
+    if (p.featured) {
+      return `
+      <article class="proj-card featured rv tilt">
+        <div class="proj-feature-row">
+          <div>
+            <div class="proj-top">
+              <span class="proj-cat">${p.category}</span>
+              <span class="proj-status ${statusClass}">${p.statusLabel}</span>
+            </div>
+            <h3 class="proj-name">${p.name}</h3>
+            <p class="proj-tagline">${p.tagline}</p>
+            <p class="proj-desc">${p.desc}</p>
+            <p class="proj-role"><span>My Role</span>${p.role}</p>
+            <div class="proj-stack">${p.stack.map(s => `<span>${s}</span>`).join('')}</div>
+          </div>
+          <div>
+            <div class="proj-feature-side">
+              <h4>Key Capabilities</h4>
+              <ul class="proj-hl">${p.highlights.map(h => `<li>${h}</li>`).join('')}</ul>
+            </div>
+            <div class="proj-actions" style="margin-top:16px">${projectActions(p)}</div>
+          </div>
+        </div>
+      </article>`;
+    }
+    return `
+      <article class="proj-card rv tilt${p.priority ? ' priority' : ''}">
+        <div class="proj-top">
+          <span class="proj-cat">${p.category}</span>
+          <span class="proj-status ${statusClass}">${p.statusLabel}</span>
+        </div>
+        <h3 class="proj-name">${p.name}</h3>
+        <p class="proj-tagline">${p.tagline}</p>
+        <p class="proj-desc">${p.desc}</p>
+        <p class="proj-role"><span>My Role</span>${p.role}</p>
+        <ul class="proj-hl">${p.highlights.slice(0,3).map(h => `<li>${h}</li>`).join('')}</ul>
+        <div class="proj-stack">${p.stack.map(s => `<span>${s}</span>`).join('')}</div>
+        <div class="proj-actions">${projectActions(p)}</div>
+
+      </article>`;
+  }).join('');
+}
+
+function renderExtra(){
+  document.getElementById('extraGrid').innerHTML = EXTRA_PROJECTS.map(p => `
+    <div class="extra-card rv tilt">
+      <span class="proj-cat">${p.category}</span>
+      <h3>${p.name}</h3>
+      <p>${p.desc}</p>
+      <a class="btn btn-outline" href="${p.github}" target="_blank" rel="noopener">${ICON.github} View on GitHub</a>
+    </div>`).join('');
+}
+
+/* PM scenarios — kept as modal-openable items so their process detail
+   (steps / lists) is preserved, now placed inside #how-i-work. */
+const SITUATIONS = [
+  {
+    id: 'scenario-a',
+    badge: 'Project Management Scenario',
+    title: 'Turning a Client Requirement Into an Executable Project Plan',
+    link: 'Understand → Plan',
+    cs: CASE_STUDIES.find(c => c.id === 'scenario-a')
+  },
+  {
+    id: 'scenario-b',
+    badge: 'Project Management Scenario',
+    title: 'Managing a Project With a Tight Deadline',
+    link: 'Plan → Track',
+    cs: CASE_STUDIES.find(c => c.id === 'scenario-b')
+  },
+  {
+    id: 'scenario-c',
+    badge: 'Project Management Scenario',
+    title: 'Managing Scope Changes During Development',
+    link: 'Coordinate → Track',
+    cs: CASE_STUDIES.find(c => c.id === 'scenario-c')
+  }
+];
+
+function renderSituations(){
+  document.getElementById('situations').innerHTML = SITUATIONS.map(s => `
+    <button class="cs-card rv tilt" data-cs="${s.id}" aria-haspopup="dialog">
+      <span class="cs-badge scenario">${s.badge}</span>
+      <h3>${s.title}</h3>
+      <span class="cs-open">Tied to: ${s.link} ${ICON.arrowRight}</span>
+    </button>`).join('');
+}
+
+/* ═════════ MODAL ═════════ */
+const modal = document.getElementById('csModal');
+const csBody = document.getElementById('csBody');
+let lastFocus = null;
+
+function sectionHTML(s){
+  let body = '';
+  if (s.t) body = `<p>${s.t}</p>`;
+  if (s.list) body = `<ul>${s.list.map(i => `<li>${i}</li>`).join('')}</ul>`;
+  if (s.steps) body = `<ol class="steps">${s.steps.map(i => `<li>${i}</li>`).join('')}</ol>`;
+  if (s.flow) body = `<div class="cs-flow">${s.flow.map((f, i) => `<div class="cs-flow-node"><span class="cs-flow-num">${String(i + 1).padStart(2, '0')}</span><span>${f}</span></div>${i < s.flow.length - 1 ? '<span class="cs-flow-arrow">→</span>' : ''}`).join('')}</div>`;
+  return `<div class="cs-sec"><h4>${s.h}</h4>${body}</div>`;
+}
+
+function openCaseStudy(id){
+  const cs = CASE_STUDIES.find(c => c.id === id);
+  if (!cs) return;
+  lastFocus = document.activeElement;
+  csBody.innerHTML = `
+    <div class="modal-badge">${cs.badge}</div>
+    <h2 id="csTitle">${cs.title}</h2>
+    <p class="modal-sub">${cs.subtitle}</p>
+    ${(() => { const proj = PROJECTS.find(p => p.caseStudy === id); return proj && proj.metric ? `<p class="proj-metric">${ICON.trend}${proj.metric}</p>` : ''; })()}
+    ${cs.sections.map(sectionHTML).join('')}`;
+  modal.classList.add('open');
+  modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden';
+  modal.querySelector('.modal-close').focus();
+}
+
+function closeCaseStudy(){
+  modal.classList.remove('open');
+  modal.setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = '';
+  if (lastFocus) lastFocus.focus();
+}
+
+document.addEventListener('click', e => {
+  const opener = e.target.closest('[data-cs]');
+  if (opener) { openCaseStudy(opener.dataset.cs); return; }
+  if (e.target.closest('[data-close]')) closeCaseStudy();
+});
+
+document.addEventListener('keydown', e => {
+  if (!modal.classList.contains('open')) return;
+  if (e.key === 'Escape') { closeCaseStudy(); return; }
+  /* focus trap — Tab cycles inside the open modal */
+  if (e.key === 'Tab'){
+    const f = modal.querySelectorAll('button, a[href]');
+    if (!f.length) return;
+    const first = f[0], last = f[f.length - 1];
+    if (e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+    else if (!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+  }
+});
+
+/* ═════════ NAV ═════════ */
+const navLinks = document.getElementById('navLinks');
+const ham = document.getElementById('ham');
+ham.addEventListener('click', () => {
+  const open = navLinks.classList.toggle('open');
+  ham.classList.toggle('open', open);
+  ham.setAttribute('aria-expanded', open);
+});
+navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+  navLinks.classList.remove('open');
+  ham.classList.remove('open');
+  ham.setAttribute('aria-expanded', 'false');
+}));
+
+/* smooth scroll */
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', e => {
+    const target = document.querySelector(a.getAttribute('href'));
+    if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+  });
+});
+
+/* active nav on scroll */
+const sections = [...document.querySelectorAll('section[id]')];
+window.addEventListener('scroll', () => {
+  let cur = '';
+  sections.forEach(s => { if (scrollY >= s.offsetTop - 140) cur = s.id; });
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    const on = a.getAttribute('href') === '#' + cur;
+    a.classList.toggle('on', on);
+    if (on) a.setAttribute('aria-current', 'true'); else a.removeAttribute('aria-current');
+  });
+}, { passive: true });
+
+/* ═════════ REVEAL ═════════ */
+const obs = new IntersectionObserver(entries => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
+}, { threshold: 0.08 });
+function observeAll(){ document.querySelectorAll('.rv').forEach(el => obs.observe(el)); }
+
+/* ═════════ 3D ENGINE ═════════
+   Zero dependencies: pointer-tracked card tilt + two canvas scenes.
+   Everything is skipped for prefers-reduced-motion and touch-only devices
+   (tilt only); canvases render one static frame instead of looping. */
+const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+const FINE = matchMedia('(pointer: fine)').matches;
+
+/* pointer-tracked 3D tilt on .tilt cards — rotateX/Y + glare position */
+function initTilt(){
+  if (REDUCED || !FINE) return;
+  let active = null;
+  const release = el => {
+    el.classList.remove('engaged');
+    el.style.setProperty('--rx', '0deg');
+    el.style.setProperty('--ry', '0deg');
+  };
+  document.addEventListener('pointerover', e => {
+    const el = e.target.closest('.tilt');
+    if (el && el !== active){ if (active) release(active); active = el; el.classList.add('engaged'); }
+  });
+  document.addEventListener('pointermove', e => {
+    const el = active || (e.target.closest && e.target.closest('.tilt'));
+    if (!el) return;
+    if (el !== active){ if (active) release(active); active = el; el.classList.add('engaged'); }
+    const r = el.getBoundingClientRect();
+    const k = Math.min(1, 860 / Math.max(r.width, 1));            /* wide cards tilt less */
+    const px = (e.clientX - r.left) / r.width - .5;
+    const py = (e.clientY - r.top) / r.height - .5;
+    el.style.setProperty('--rx', (-py * 7 * k).toFixed(2) + 'deg');
+    el.style.setProperty('--ry', (px * 7 * k).toFixed(2) + 'deg');
+    el.style.setProperty('--gx', ((px + .5) * 100).toFixed(1) + '%');
+    el.style.setProperty('--gy', ((py + .5) * 100).toFixed(1) + '%');
+  });
+  document.addEventListener('pointerout', e => {
+    if (!active) return;
+    if ((e.target === active || active.contains(e.target)) && !(e.relatedTarget && active.contains(e.relatedTarget))){
+      release(active); active = null;
+    }
+  });
+}
+
+/* hero scene — a slowly rotating 3D node network: the "bridge" between
+   clients, requirements and development teams (matches the hero copy) */
+function initHeroScene(){
+  const cvs = document.getElementById('hero3d');
+  if (!cvs || !cvs.getContext) return;
+  const ctx = cvs.getContext('2d');
+  const host = cvs.parentElement;
+  let w = 0, h = 0, nodes = [], links = [], raf = 0, inView = false, last = 0;
+  let t = Math.random() * 10;
+  const pt = { x: 0, y: 0, tx: 0, ty: 0 };
+
+  function resize(){
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    w = host.clientWidth; h = host.clientHeight;
+    cvs.width = Math.round(w * dpr); cvs.height = Math.round(h * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    build();
+    if (REDUCED) draw(0);
+  }
+  function build(){
+    const n = w < 720 ? 44 : 84;
+    const GA = Math.PI * (3 - Math.sqrt(5));
+    nodes = [];
+    for (let i = 0; i < n; i++){
+      const y = 1 - (i / (n - 1)) * 2;
+      const r = Math.sqrt(Math.max(0, 1 - y * y));
+      const th = GA * i;
+      nodes.push({ x: Math.cos(th) * r, y, z: Math.sin(th) * r, alt: i % 9 === 0 });
+    }
+    links = [];
+    const maxC2 = 0.62 * 0.62;
+    for (let i = 0; i < n; i++) for (let j = i + 1; j < n; j++){
+      const a = nodes[i], b = nodes[j];
+      const dx = a.x - b.x, dy = a.y - b.y, dz = a.z - b.z;
+      if (dx * dx + dy * dy + dz * dz < maxC2) links.push([i, j]);
+    }
+  }
+  function draw(dt){
+    t += dt * 0.00022;
+    pt.x += (pt.tx - pt.x) * 0.045;
+    pt.y += (pt.ty - pt.y) * 0.045;
+    ctx.clearRect(0, 0, w, h);
+    const rotY = t + pt.x * 0.55, rotX = 0.34 + pt.y * 0.3;
+    const cx = w * 0.5, cy = h * 0.47;
+    const R = Math.min(w, h) * 0.42;
+    const cA = Math.cos(rotY), sA = Math.sin(rotY);
+    const cB = Math.cos(rotX), sB = Math.sin(rotX);
+    const P = nodes.map(p => {
+      const x1 = p.x * cA + p.z * sA;
+      const z1 = -p.x * sA + p.z * cA;
+      const y2 = p.y * cB - z1 * sB;
+      const z2 = p.y * sB + z1 * cB;
+      const s = 2.6 / (2.6 + z2);
+      return { x: cx + x1 * R * s, y: cy + y2 * R * s, d: (1 - z2) / 2, s };
+    });
+    ctx.lineWidth = 1;
+    for (const [a, b] of links){
+      const pa = P[a], pb = P[b];
+      ctx.strokeStyle = 'rgba(234,179,8,' + (((pa.d + pb.d) / 2) * 0.2 + 0.03).toFixed(3) + ')';
+      ctx.beginPath(); ctx.moveTo(pa.x, pa.y); ctx.lineTo(pb.x, pb.y); ctx.stroke();
+    }
+    for (const p of P){
+      ctx.fillStyle = p.alt
+        ? 'rgba(249,115,22,' + (0.24 + p.d * 0.7).toFixed(3) + ')'
+        : 'rgba(234,179,8,' + (0.18 + p.d * 0.72).toFixed(3) + ')';
+      ctx.beginPath(); ctx.arc(p.x, p.y, 1.1 + p.s * 1.7, 0, 6.2832); ctx.fill();
+    }
+  }
+  function loop(ts){
+    const dt = Math.min(ts - last, 50); last = ts;
+    draw(dt);
+    raf = requestAnimationFrame(loop);
+  }
+  function start(){ if (raf || REDUCED) return; last = performance.now(); raf = requestAnimationFrame(loop); }
+  function stop(){ if (raf){ cancelAnimationFrame(raf); raf = 0; } }
+
+  new IntersectionObserver(es => es.forEach(e => {
+    inView = e.isIntersecting;
+    if (inView) start(); else stop();
+  })).observe(host);
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) stop(); else if (inView) start();
+  });
+  if (FINE && !REDUCED){
+    host.addEventListener('pointermove', e => {
+      const r = cvs.getBoundingClientRect();
+      pt.tx = (e.clientX - r.left) / r.width - 0.5;
+      pt.ty = (e.clientY - r.top) / r.height - 0.5;
+    });
+    host.addEventListener('pointerleave', () => { pt.tx = 0; pt.ty = 0; });
+  }
+  window.addEventListener('resize', resize);
+  resize();
+}
+
+/* skills scene — the technical stack as words orbiting a tilted 3D ring
+   (sits inside the "Technical Foundation" card, echoing "What I work with") */
+function initRingScene(){
+  const cvs = document.getElementById('skillRing');
+  if (!cvs || !cvs.getContext) return;
+  const ctx = cvs.getContext('2d');
+  const host = cvs.parentElement;
+  const words = SKILL_CATS[SKILL_CATS.length - 1].items;
+  const TILT = 0.5;
+  let w = 0, h = 0, raf = 0, inView = false, last = 0, t = Math.random() * 6;
+
+  function resize(){
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    w = host.clientWidth; h = host.clientHeight;
+    cvs.width = Math.round(w * dpr); cvs.height = Math.round(h * dpr);
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    if (REDUCED) draw(0);
+  }
+  function draw(dt){
+    t += dt * 0.0005;
+    ctx.clearRect(0, 0, w, h);
+    const cx = w / 2, cy = h / 2;
+    const R = Math.min(w * 0.42, 420);
+    const sT = Math.sin(TILT), cT = Math.cos(TILT);
+    const pts = words.map((word, i) => {
+      const a = t + (i / words.length) * Math.PI * 2;
+      const x0 = Math.sin(a), z0 = Math.cos(a);
+      const y2 = -z0 * sT;                     /* ring tilted away from the viewer */
+      const z1 = z0 * cT;
+      const s = 2.6 / (2.6 + z1);
+      const depth = (1 - z1 / cT) / 2;         /* 0 = far, 1 = near */
+      return { word, x: cx + x0 * R * s, y: cy + y2 * R * s, depth };
+    }).sort((a, b) => a.depth - b.depth);      /* paint far → near */
+    ctx.strokeStyle = 'rgba(234,179,8,.18)';
+    ctx.lineWidth = 1;
+    ctx.beginPath();
+    ctx.ellipse(cx, cy, R * 1.02, R * sT * 1.02, 0, 0, 6.2832);
+    ctx.stroke();
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    for (const p of pts){
+      ctx.font = '600 ' + (10.5 + p.depth * 10).toFixed(1) + 'px "JetBrains Mono", monospace';
+      ctx.fillStyle = p.depth > 0.82
+        ? 'rgba(250,204,21,' + (0.55 + p.depth * 0.45).toFixed(3) + ')'
+        : 'rgba(161,161,170,' + (0.2 + p.depth * 0.62).toFixed(3) + ')';
+      ctx.fillText(p.word, p.x, p.y);
+    }
+  }
+  function loop(ts){
+    const dt = Math.min(ts - last, 50); last = ts;
+    draw(dt);
+    raf = requestAnimationFrame(loop);
+  }
+  function start(){ if (raf || REDUCED) return; last = performance.now(); raf = requestAnimationFrame(loop); }
+  function stop(){ if (raf){ cancelAnimationFrame(raf); raf = 0; } }
+
+  new IntersectionObserver(es => es.forEach(e => {
+    inView = e.isIntersecting;
+    if (inView) start(); else stop();
+  })).observe(host);
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) stop(); else if (inView) start();
+  });
+  window.addEventListener('resize', resize);
+  resize();
+}
+
+/* ═════════ INIT ═════════ */
+renderExperience();
+renderFlow();
+renderPipeline();
+renderSkills();
+renderProjects();
+renderExtra();
+renderSituations();
+observeAll();
+initTilt();
+initHeroScene();
+initRingScene();
+
+/* delivery pipeline — cycle through the stages */
+let pipeIdx = 0;
+setInterval(() => {
+  if (document.hidden) return;
+  const stages = document.querySelectorAll('#pipelineTrack .pipe-stage');
+  if (!stages.length) return;
+  stages.forEach((el, i) => {
+    el.classList.toggle('done', i < pipeIdx);
+    el.classList.toggle('active', i === pipeIdx);
+  });
+  pipeIdx = (pipeIdx + 1) % stages.length;
+}, 2200);
+</script>
+</body>
+</html>
